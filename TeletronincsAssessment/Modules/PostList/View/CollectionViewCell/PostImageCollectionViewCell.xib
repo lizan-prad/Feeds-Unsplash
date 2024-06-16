@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostImageCollectionViewCell" id="gTV-IL-0wX" customClass="PostImageCollectionViewCell" customModule="TeletronincsAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="144"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t7R-ht-wce">
+                        <rect key="frame" x="0.0" y="2.3333333333333286" width="155" height="139.33333333333331"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="photo.circle.fill" catalog="system" symbolScale="small"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQz-iX-XSF">
+                        <rect key="frame" x="0.0" y="0.0" width="155" height="144"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="+ 42"/>
+                        <connections>
+                            <action selector="showMoreAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="En5-DO-FhN"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="JQz-iX-XSF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="29u-es-C6d"/>
+                <constraint firstAttribute="trailing" secondItem="JQz-iX-XSF" secondAttribute="trailing" id="7Wb-Fc-Foq"/>
+                <constraint firstItem="t7R-ht-wce" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9uR-ba-yGh"/>
+                <constraint firstItem="t7R-ht-wce" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PhC-Iq-4iB"/>
+                <constraint firstItem="JQz-iX-XSF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T73-vj-bbx"/>
+                <constraint firstAttribute="bottom" secondItem="JQz-iX-XSF" secondAttribute="bottom" id="Yfr-ad-Ksa"/>
+                <constraint firstAttribute="trailing" secondItem="t7R-ht-wce" secondAttribute="trailing" id="bGS-xU-Bsh"/>
+                <constraint firstAttribute="bottom" secondItem="t7R-ht-wce" secondAttribute="bottom" id="e0K-hy-ohs"/>
+            </constraints>
+            <size key="customSize" width="155" height="144"/>
+            <connections>
+                <outlet property="postImage" destination="t7R-ht-wce" id="Ki2-vf-9yK"/>
+                <outlet property="shownMoreBtn" destination="JQz-iX-XSF" id="93P-U9-fIs"/>
+            </connections>
+            <point key="canvasLocation" x="161.06870229007632" y="52.816901408450704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

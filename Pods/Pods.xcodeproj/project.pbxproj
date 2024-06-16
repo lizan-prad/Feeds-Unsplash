@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05D0EE23858CA0D882364F5D1FA90CFF /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C161C4FE071B5BEC5633F673A3642F /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F1626F0A05485434307F6848F084394 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		667C13397FE44814FA8E63EEA5CFDF7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		985C8EF02E02BE63C83CBD44373D59E8 /* Pods-TeletronincsAssessment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13F6A65676C6858BC5AA0E57488B7960 /* Pods-TeletronincsAssessment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5E749220479C2FFCB099C534AF6B8B1 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B43F7FDA8AE67426E4C3106DDD270812 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-dummy.m */; };
+		CA0DDB7AF146D2B8920963EE7F1C7F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D0A4D7E7E8243C2E01A63C8631EF1763 /* Pods-TeletronincsAssessmentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61D417B79EDB76251A7DF2CF093415 /* Pods-TeletronincsAssessmentTests-dummy.m */; };
+		D38816AB715F071465A516EF67858A02 /* Pods-TeletronincsAssessment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB01DF95AD02184F1608E451998D36 /* Pods-TeletronincsAssessment-dummy.m */; };
+		F5C4A73D9007553B181DDF715B29E07E /* Pods-TeletronincsAssessmentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A7DFD63F9E95A91B7ED2BF4C6E6497 /* Pods-TeletronincsAssessmentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA83C8FD7652A0620DF96555F77F36C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0630CAB40828E8C452F4782DA6CF9EBA;
+			remoteInfo = "Pods-TeletronincsAssessment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0380638C89CB59209F9811B2166B5E53 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-Info.plist"; sourceTree = "<group>"; };
+		13F6A65676C6858BC5AA0E57488B7960 /* Pods-TeletronincsAssessment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeletronincsAssessment-umbrella.h"; sourceTree = "<group>"; };
+		247E7F64F1B5FDFFDA55FA843C0E1855 /* Pods-TeletronincsAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeletronincsAssessment.debug.xcconfig"; sourceTree = "<group>"; };
+		2CD63706484EBDDA340AA7837B3C1B47 /* Pods-TeletronincsAssessment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TeletronincsAssessment.modulemap"; sourceTree = "<group>"; };
+		340A37D75A8252894E0F45650DB1708F /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		41795DFC40D574E5D82197F704AC0857 /* Pods-TeletronincsAssessment */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TeletronincsAssessment"; path = Pods_TeletronincsAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A7DFD63F9E95A91B7ED2BF4C6E6497 /* Pods-TeletronincsAssessmentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeletronincsAssessmentTests-umbrella.h"; sourceTree = "<group>"; };
+		6A61D417B79EDB76251A7DF2CF093415 /* Pods-TeletronincsAssessmentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeletronincsAssessmentTests-dummy.m"; sourceTree = "<group>"; };
+		6DD40DA27D8AA0696676455B199DC559 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		81184672133644B382FF0B7FA42552EE /* Pods-TeletronincsAssessment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeletronincsAssessment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C0369A42DB83180B4E8BC68E4BC7152 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		90EA618D6518835AE0A6D93F5ED35047 /* Pods-TeletronincsAssessmentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeletronincsAssessmentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9C335D060826863F0C30F433270E07FE /* Pods-TeletronincsAssessmentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeletronincsAssessmentTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A585004CB288C67C403F6820E9A89288 /* Pods-TeletronincsAssessment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeletronincsAssessment-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB42FE62BC60E044E44D632E604699A1 /* Pods-TeletronincsAssessmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeletronincsAssessmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B43F7FDA8AE67426E4C3106DDD270812 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-dummy.m"; sourceTree = "<group>"; };
+		B77BCF86E60B423AF2F21AFBBD603B13 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests"; path = Pods_TeletronincsAssessment_TeletronincsAssessmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C161C4FE071B5BEC5633F673A3642F /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-umbrella.h"; sourceTree = "<group>"; };
+		BE939EF95CE28748D8C3D44B3D2AC5B5 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C4EB01DF95AD02184F1608E451998D36 /* Pods-TeletronincsAssessment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeletronincsAssessment-dummy.m"; sourceTree = "<group>"; };
+		CED82C1BA07124B7FD59E0DB3F676C0C /* Pods-TeletronincsAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeletronincsAssessment.release.xcconfig"; sourceTree = "<group>"; };
+		DAF7BDB415317FE4FDF9E7197F883933 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.modulemap"; sourceTree = "<group>"; };
+		DD9FFBB6EEB14AEF34D0C9E8CF98AE4A /* Pods-TeletronincsAssessmentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TeletronincsAssessmentTests.modulemap"; sourceTree = "<group>"; };
+		DEE584AA6319C74E977D8CDC6C488343 /* Pods-TeletronincsAssessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeletronincsAssessmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED6933C084647FDA8B85A3C0D9C2BF5D /* Pods-TeletronincsAssessmentTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeletronincsAssessmentTests-Info.plist"; sourceTree = "<group>"; };
+		EF9C5C63F0F1FF7F4967CB9B6CEBF5FE /* Pods-TeletronincsAssessment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeletronincsAssessment-Info.plist"; sourceTree = "<group>"; };
+		F42C4BDD63E25712E227E9D9CBE303BD /* Pods-TeletronincsAssessmentTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TeletronincsAssessmentTests"; path = Pods_TeletronincsAssessmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3511421FFF540C2815193870D99A8CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1626F0A05485434307F6848F084394 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D399B426D563BA77B021095FAA3743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667C13397FE44814FA8E63EEA5CFDF7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E7868766043B2BFE5E70D53B2DDE5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0DDB7AF146D2B8920963EE7F1C7F16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EBD86D908C1AC51D573E66CCE027D2E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4A77103DF372340FC0BCC12CDFBCC0F /* Pods-TeletronincsAssessment */,
+				8B443DD7C6617AAEDABA6BCEA2BACA75 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests */,
+				D3B7663F2CF1483C4DDCE64E9EDB8923 /* Pods-TeletronincsAssessmentTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B443DD7C6617AAEDABA6BCEA2BACA75 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF7BDB415317FE4FDF9E7197F883933 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.modulemap */,
+				BE939EF95CE28748D8C3D44B3D2AC5B5 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-acknowledgements.markdown */,
+				8C0369A42DB83180B4E8BC68E4BC7152 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-acknowledgements.plist */,
+				B43F7FDA8AE67426E4C3106DDD270812 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-dummy.m */,
+				0380638C89CB59209F9811B2166B5E53 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-Info.plist */,
+				B9C161C4FE071B5BEC5633F673A3642F /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-umbrella.h */,
+				6DD40DA27D8AA0696676455B199DC559 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig */,
+				340A37D75A8252894E0F45650DB1708F /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig */,
+			);
+			name = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests";
+			path = "Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests";
+			sourceTree = "<group>";
+		};
+		95E19994C1E1BD4E6D054A32D0B15EBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41795DFC40D574E5D82197F704AC0857 /* Pods-TeletronincsAssessment */,
+				B77BCF86E60B423AF2F21AFBBD603B13 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests */,
+				F42C4BDD63E25712E227E9D9CBE303BD /* Pods-TeletronincsAssessmentTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4A77103DF372340FC0BCC12CDFBCC0F /* Pods-TeletronincsAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				2CD63706484EBDDA340AA7837B3C1B47 /* Pods-TeletronincsAssessment.modulemap */,
+				81184672133644B382FF0B7FA42552EE /* Pods-TeletronincsAssessment-acknowledgements.markdown */,
+				A585004CB288C67C403F6820E9A89288 /* Pods-TeletronincsAssessment-acknowledgements.plist */,
+				C4EB01DF95AD02184F1608E451998D36 /* Pods-TeletronincsAssessment-dummy.m */,
+				EF9C5C63F0F1FF7F4967CB9B6CEBF5FE /* Pods-TeletronincsAssessment-Info.plist */,
+				13F6A65676C6858BC5AA0E57488B7960 /* Pods-TeletronincsAssessment-umbrella.h */,
+				247E7F64F1B5FDFFDA55FA843C0E1855 /* Pods-TeletronincsAssessment.debug.xcconfig */,
+				CED82C1BA07124B7FD59E0DB3F676C0C /* Pods-TeletronincsAssessment.release.xcconfig */,
+			);
+			name = "Pods-TeletronincsAssessment";
+			path = "Target Support Files/Pods-TeletronincsAssessment";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				95E19994C1E1BD4E6D054A32D0B15EBB /* Products */,
+				3EBD86D908C1AC51D573E66CCE027D2E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B7663F2CF1483C4DDCE64E9EDB8923 /* Pods-TeletronincsAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9FFBB6EEB14AEF34D0C9E8CF98AE4A /* Pods-TeletronincsAssessmentTests.modulemap */,
+				90EA618D6518835AE0A6D93F5ED35047 /* Pods-TeletronincsAssessmentTests-acknowledgements.markdown */,
+				9C335D060826863F0C30F433270E07FE /* Pods-TeletronincsAssessmentTests-acknowledgements.plist */,
+				6A61D417B79EDB76251A7DF2CF093415 /* Pods-TeletronincsAssessmentTests-dummy.m */,
+				ED6933C084647FDA8B85A3C0D9C2BF5D /* Pods-TeletronincsAssessmentTests-Info.plist */,
+				41A7DFD63F9E95A91B7ED2BF4C6E6497 /* Pods-TeletronincsAssessmentTests-umbrella.h */,
+				AB42FE62BC60E044E44D632E604699A1 /* Pods-TeletronincsAssessmentTests.debug.xcconfig */,
+				DEE584AA6319C74E977D8CDC6C488343 /* Pods-TeletronincsAssessmentTests.release.xcconfig */,
+			);
+			name = "Pods-TeletronincsAssessmentTests";
+			path = "Target Support Files/Pods-TeletronincsAssessmentTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26B58439651BAF814820C7636E46D98F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D0EE23858CA0D882364F5D1FA90CFF /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CC5DEC1637320BD935FAD9DC16C6D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985C8EF02E02BE63C83CBD44373D59E8 /* Pods-TeletronincsAssessment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8323AB21C693E0BB643F350D7B7A1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C4A73D9007553B181DDF715B29E07E /* Pods-TeletronincsAssessmentTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0630CAB40828E8C452F4782DA6CF9EBA /* Pods-TeletronincsAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A6FF79A8994CB1CBB57B8BAF543B538 /* Build configuration list for PBXNativeTarget "Pods-TeletronincsAssessment" */;
+			buildPhases = (
+				99CC5DEC1637320BD935FAD9DC16C6D5 /* Headers */,
+				69D34FA7E5BBAC42D189DBDF7C6FA115 /* Sources */,
+				84D399B426D563BA77B021095FAA3743 /* Frameworks */,
+				DC0083A8842EF82D49546DD74644A506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TeletronincsAssessment";
+			productName = Pods_TeletronincsAssessment;
+			productReference = 41795DFC40D574E5D82197F704AC0857 /* Pods-TeletronincsAssessment */;
+			productType = "com.apple.product-type.framework";
+		};
+		29F06E48848EC4261AEC3FABA755AA49 /* Pods-TeletronincsAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFC43BCE316E217BBF03FDF50662984 /* Build configuration list for PBXNativeTarget "Pods-TeletronincsAssessmentTests" */;
+			buildPhases = (
+				CB8323AB21C693E0BB643F350D7B7A1D /* Headers */,
+				A9B8B39A696620E47BD60A0B7A2E433F /* Sources */,
+				87E7868766043B2BFE5E70D53B2DDE5F /* Frameworks */,
+				4773DA956802CDD965EBC50D51B06F7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE2DC29C36182D02076E07939F96A52 /* PBXTargetDependency */,
+			);
+			name = "Pods-TeletronincsAssessmentTests";
+			productName = Pods_TeletronincsAssessmentTests;
+			productReference = F42C4BDD63E25712E227E9D9CBE303BD /* Pods-TeletronincsAssessmentTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		FEBAADBFDD6A164539D810350ECED645 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B43C590A08853997E301CC71939C368 /* Build configuration list for PBXNativeTarget "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests" */;
+			buildPhases = (
+				26B58439651BAF814820C7636E46D98F /* Headers */,
+				ABA108EE7357CE130F2AF0D354B00ACE /* Sources */,
+				3511421FFF540C2815193870D99A8CDE /* Frameworks */,
+				04E36DA741F49B45D57B87CD82557EB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests";
+			productName = Pods_TeletronincsAssessment_TeletronincsAssessmentUITests;
+			productReference = B77BCF86E60B423AF2F21AFBBD603B13 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 95E19994C1E1BD4E6D054A32D0B15EBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0630CAB40828E8C452F4782DA6CF9EBA /* Pods-TeletronincsAssessment */,
+				FEBAADBFDD6A164539D810350ECED645 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests */,
+				29F06E48848EC4261AEC3FABA755AA49 /* Pods-TeletronincsAssessmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E36DA741F49B45D57B87CD82557EB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4773DA956802CDD965EBC50D51B06F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC0083A8842EF82D49546DD74644A506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69D34FA7E5BBAC42D189DBDF7C6FA115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38816AB715F071465A516EF67858A02 /* Pods-TeletronincsAssessment-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B8B39A696620E47BD60A0B7A2E433F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A4D7E7E8243C2E01A63C8631EF1763 /* Pods-TeletronincsAssessmentTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA108EE7357CE130F2AF0D354B00ACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5E749220479C2FFCB099C534AF6B8B1 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAE2DC29C36182D02076E07939F96A52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TeletronincsAssessment";
+			target = 0630CAB40828E8C452F4782DA6CF9EBA /* Pods-TeletronincsAssessment */;
+			targetProxy = EA83C8FD7652A0620DF96555F77F36C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1961ED2B78ABCB903E7FF2D2826AC2E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED82C1BA07124B7FD59E0DB3F676C0C /* Pods-TeletronincsAssessment.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		85EFE5A99429068F3F08BFA94BB6FD40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD40DA27D8AA0696676455B199DC559 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		879C0D2E515B06558B5C9F8EAF8BCC60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247E7F64F1B5FDFFDA55FA843C0E1855 /* Pods-TeletronincsAssessment.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C54A5391F79DB4E7F22A322C30EA402E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE584AA6319C74E977D8CDC6C488343 /* Pods-TeletronincsAssessmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TeletronincsAssessmentTests/Pods-TeletronincsAssessmentTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeletronincsAssessmentTests/Pods-TeletronincsAssessmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EBA789457EA5A255E58FAF26BF9DAAE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB42FE62BC60E044E44D632E604699A1 /* Pods-TeletronincsAssessmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TeletronincsAssessmentTests/Pods-TeletronincsAssessmentTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeletronincsAssessmentTests/Pods-TeletronincsAssessmentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED376B760165936B3ECA99C25E6FEB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340A37D75A8252894E0F45650DB1708F /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B43C590A08853997E301CC71939C368 /* Build configuration list for PBXNativeTarget "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85EFE5A99429068F3F08BFA94BB6FD40 /* Debug */,
+				ED376B760165936B3ECA99C25E6FEB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A6FF79A8994CB1CBB57B8BAF543B538 /* Build configuration list for PBXNativeTarget "Pods-TeletronincsAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879C0D2E515B06558B5C9F8EAF8BCC60 /* Debug */,
+				1961ED2B78ABCB903E7FF2D2826AC2E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFC43BCE316E217BBF03FDF50662984 /* Build configuration list for PBXNativeTarget "Pods-TeletronincsAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA789457EA5A255E58FAF26BF9DAAE3 /* Debug */,
+				C54A5391F79DB4E7F22A322C30EA402E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

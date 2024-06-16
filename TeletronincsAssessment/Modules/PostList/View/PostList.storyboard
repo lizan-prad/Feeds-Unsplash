@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PostListViewController" id="Y6W-OH-hqX" customClass="PostListViewController" customModule="TeletronincsAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q6f-FY-Rg6">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.090823532299999996" green="0.085826560869999999" blue="0.1731112051" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8w-4a-7fs">
+                                <rect key="frame" x="96.666666666666686" y="386" width="200" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching posts..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsd-MS-8oz">
+                                        <rect key="frame" x="31.333333333333329" y="29.666666666666686" width="137.33333333333337" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15945290566516795" green="0.14847024504362891" blue="0.29688341358695369" alpha="0.58930049668874174" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="vsd-MS-8oz" firstAttribute="centerY" secondItem="P8w-4a-7fs" secondAttribute="centerY" id="Ain-Vr-O2D"/>
+                                    <constraint firstAttribute="height" constant="80" id="WKU-yQ-cNV"/>
+                                    <constraint firstAttribute="width" constant="200" id="dx9-vl-giR"/>
+                                    <constraint firstItem="vsd-MS-8oz" firstAttribute="centerX" secondItem="P8w-4a-7fs" secondAttribute="centerX" id="xXx-dh-4Pf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.086274509803921567" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="q6f-FY-Rg6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TL1-Vl-hJI"/>
+                            <constraint firstItem="q6f-FY-Rg6" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="eAC-0G-UF1"/>
+                            <constraint firstItem="P8w-4a-7fs" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="fNl-a7-peN"/>
+                            <constraint firstItem="q6f-FY-Rg6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="hxX-Ff-xJA"/>
+                            <constraint firstItem="P8w-4a-7fs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="k2W-68-jy3"/>
+                            <constraint firstItem="q6f-FY-Rg6" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="oRK-v0-8aS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="P8w-4a-7fs" id="Xfp-QU-rOo"/>
+                        <outlet property="tableView" destination="q6f-FY-Rg6" id="2yB-Q7-np9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+</document>

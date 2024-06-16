@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Preview View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ImagePreviewViewController" modalPresentationStyle="overFullScreen" id="Y6W-OH-hqX" customClass="ImagePreviewViewController" customModule="TeletronincsAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0WR-k5-iIw">
+                                <rect key="frame" x="0.0" y="228.33333333333334" width="393" height="395.33333333333326"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="ZDh-RY-1lx"/>
+                                </constraints>
+                                <imageReference key="image" image="photo.circle.fill" catalog="system" symbolScale="small"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eh7-tq-Emr">
+                                <rect key="frame" x="16" y="638" width="361" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b83-jG-vt6">
+                                <rect key="frame" x="338" y="79" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="KKh-UB-7Ah"/>
+                                    <constraint firstAttribute="height" constant="35" id="bHs-43-UGe"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="x.circle.fill" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ul3-tH-prm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0WR-k5-iIw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="42g-PY-Anh"/>
+                            <constraint firstItem="0WR-k5-iIw" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="BiT-gy-NMe"/>
+                            <constraint firstItem="eh7-tq-Emr" firstAttribute="top" secondItem="0WR-k5-iIw" secondAttribute="bottom" constant="12" id="BpP-1s-2fh"/>
+                            <constraint firstItem="0WR-k5-iIw" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JCe-Ns-nnU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eh7-tq-Emr" secondAttribute="trailing" constant="16" id="ad8-l3-gld"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="b83-jG-vt6" secondAttribute="trailing" constant="20" id="ave-xm-6Cq"/>
+                            <constraint firstItem="b83-jG-vt6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="dV4-t7-hvD"/>
+                            <constraint firstItem="eh7-tq-Emr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="eVn-gB-y3d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0WR-k5-iIw" secondAttribute="trailing" id="h43-gw-azZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="0WR-k5-iIw" id="tfL-3g-c7o"/>
+                        <outlet property="photoTitle" destination="eh7-tq-Emr" id="9fv-nr-Vk1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="x.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

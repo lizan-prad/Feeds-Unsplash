@@ -1,0 +1,6 @@
+framework module Pods_TeletronincsAssessmentTests {
+  umbrella header "Pods-TeletronincsAssessmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

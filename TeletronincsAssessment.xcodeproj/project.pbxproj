@@ -1,0 +1,1133 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E8378A19F7E36EA4D645425 /* Pods_TeletronincsAssessmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA544D60532BD8459DA1B6D /* Pods_TeletronincsAssessmentTests.framework */; };
+		677A7F09072F7E3E2BDD16CF /* Pods_TeletronincsAssessment_TeletronincsAssessmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A43DF2CEBED334B81B5D5A /* Pods_TeletronincsAssessment_TeletronincsAssessmentUITests.framework */; };
+		BE1FA7FB2C1ED4340094F518 /* PostEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA7F92C1ED4340094F518 /* PostEntity+CoreDataClass.swift */; };
+		BE1FA7FC2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA7FA2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift */; };
+		BE1FA7FD2C1ED4400094F518 /* PostEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA7F92C1ED4340094F518 /* PostEntity+CoreDataClass.swift */; };
+		BE1FA7FE2C1ED4410094F518 /* PostEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA7F92C1ED4340094F518 /* PostEntity+CoreDataClass.swift */; };
+		BE1FA7FF2C1ED4430094F518 /* PostEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA7FA2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift */; };
+		BE1FA8002C1ED4430094F518 /* PostEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA7FA2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift */; };
+		BE1FA8022C1ED6690094F518 /* PostListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA8012C1ED6690094F518 /* PostListViewControllerUITests.swift */; };
+		BE3A256F2C1E131D0028180F /* PostDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A256E2C1E131D0028180F /* PostDetailsCoordinator.swift */; };
+		BE3A25742C1E13470028180F /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25732C1E13470028180F /* PostDetailsViewController.swift */; };
+		BE3A25762C1E13B50028180F /* PostDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A25752C1E13B50028180F /* PostDetails.storyboard */; };
+		BE3A257A2C1E19080028180F /* PostImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25782C1E19080028180F /* PostImagesTableViewCell.swift */; };
+		BE3A257B2C1E19080028180F /* PostImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE3A25792C1E19080028180F /* PostImagesTableViewCell.xib */; };
+		BE3A257E2C1E20840028180F /* ImagePreview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A257D2C1E20840028180F /* ImagePreview.storyboard */; };
+		BE3A25802C1E20E30028180F /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A257F2C1E20E30028180F /* ImagePreviewViewController.swift */; };
+		BE3A25832C1E21960028180F /* ImagePreviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25822C1E21960028180F /* ImagePreviewCoordinator.swift */; };
+		BE3A25862C1E28520028180F /* PhotoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25842C1E28520028180F /* PhotoEntity+CoreDataProperties.swift */; };
+		BE3A25872C1E28520028180F /* PhotoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25852C1E28520028180F /* PhotoEntity+CoreDataClass.swift */; };
+		BE3A25892C1E346C0028180F /* PostListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25882C1E346C0028180F /* PostListViewModelTests.swift */; };
+		BE3A258A2C1E349F0028180F /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17642C1D8FBC00AAE1A6 /* PostListViewModel.swift */; };
+		BE3A258B2C1E34AA0028180F /* PhotoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25852C1E28520028180F /* PhotoEntity+CoreDataClass.swift */; };
+		BE3A258D2C1E34AF0028180F /* AlbumEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE177F2C1DA87800AAE1A6 /* AlbumEntity+CoreDataClass.swift */; };
+		BE3A258E2C1E34C00028180F /* PostListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17682C1D903B00AAE1A6 /* PostListService.swift */; };
+		BE3A258F2C1E34CE0028180F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE175B2C1D83F800AAE1A6 /* ErrorHandler.swift */; };
+		BE3A25902C1E34D70028180F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17772C1D957A00AAE1A6 /* CoreDataStack.swift */; };
+		BE3A25912C1E36DA0028180F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17592C1D833D00AAE1A6 /* NetworkManager.swift */; };
+		BE3A25922C1E37070028180F /* AlbumEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17802C1DA87800AAE1A6 /* AlbumEntity+CoreDataProperties.swift */; };
+		BE3A25932C1E370A0028180F /* PhotoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25842C1E28520028180F /* PhotoEntity+CoreDataProperties.swift */; };
+		BE3A25972C1E379C0028180F /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE176D2C1D910E00AAE1A6 /* PostTableViewCell.swift */; };
+		BE3A25982C1E37A30028180F /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAE176E2C1D910E00AAE1A6 /* PostTableViewCell.xib */; };
+		BE3A25992C1E37C00028180F /* AlbumEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE177F2C1DA87800AAE1A6 /* AlbumEntity+CoreDataClass.swift */; };
+		BE3A259A2C1E37C20028180F /* AlbumEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17802C1DA87800AAE1A6 /* AlbumEntity+CoreDataProperties.swift */; };
+		BE3A259B2C1E37C40028180F /* PhotoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25852C1E28520028180F /* PhotoEntity+CoreDataClass.swift */; };
+		BE3A259C2C1E37C60028180F /* PhotoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25842C1E28520028180F /* PhotoEntity+CoreDataProperties.swift */; };
+		BE3A259F2C1E37D10028180F /* PostImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17882C1DBB3900AAE1A6 /* PostImageCollectionViewCell.swift */; };
+		BE3A25A02C1E37D50028180F /* PostImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAE17892C1DBB3900AAE1A6 /* PostImageCollectionViewCell.xib */; };
+		BE3A25A12C1E37E90028180F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA93B22C1DDDF20081CD7A /* UIView+Extensions.swift */; };
+		BE3A25A22C1E37FD0028180F /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE175E2C1D8E9D00AAE1A6 /* ImageManager.swift */; };
+		BE3A25A32C1E37FE0028180F /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE175E2C1D8E9D00AAE1A6 /* ImageManager.swift */; };
+		BE3A25A42C1E38290028180F /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17642C1D8FBC00AAE1A6 /* PostListViewModel.swift */; };
+		BE3A25A52C1E383F0028180F /* PostListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17682C1D903B00AAE1A6 /* PostListService.swift */; };
+		BE3A25A62C1E38480028180F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE175B2C1D83F800AAE1A6 /* ErrorHandler.swift */; };
+		BE3A25A72C1E38530028180F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17592C1D833D00AAE1A6 /* NetworkManager.swift */; };
+		BE3A25A82C1E38620028180F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17772C1D957A00AAE1A6 /* CoreDataStack.swift */; };
+		BE3A25A92C1E387A0028180F /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17602C1D8F7700AAE1A6 /* PostListViewController.swift */; };
+		BE3A25AA2C1E387B0028180F /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17602C1D8F7700AAE1A6 /* PostListViewController.swift */; };
+		BE3A25AB2C1E388F0028180F /* PostListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17662C1D8FE000AAE1A6 /* PostListCoordinator.swift */; };
+		BE3A25AC2C1E38900028180F /* PostListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17662C1D8FE000AAE1A6 /* PostListCoordinator.swift */; };
+		BE3A25AD2C1E38960028180F /* PostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAE17622C1D8F7F00AAE1A6 /* PostList.storyboard */; };
+		BE3A25AE2C1E38A40028180F /* PostDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A256E2C1E131D0028180F /* PostDetailsCoordinator.swift */; };
+		BE3A25AF2C1E38A60028180F /* PostDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A256E2C1E131D0028180F /* PostDetailsCoordinator.swift */; };
+		BE3A25B02C1E38AB0028180F /* PostDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A25752C1E13B50028180F /* PostDetails.storyboard */; };
+		BE3A25B12C1E38AE0028180F /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25732C1E13470028180F /* PostDetailsViewController.swift */; };
+		BE3A25B22C1E38B10028180F /* PostImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25782C1E19080028180F /* PostImagesTableViewCell.swift */; };
+		BE3A25B32C1E38B30028180F /* PostImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE3A25792C1E19080028180F /* PostImagesTableViewCell.xib */; };
+		BE3A25B42C1E38B80028180F /* ImagePreviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25822C1E21960028180F /* ImagePreviewCoordinator.swift */; };
+		BE3A25B52C1E38B90028180F /* ImagePreviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25822C1E21960028180F /* ImagePreviewCoordinator.swift */; };
+		BE3A25B62C1E38BC0028180F /* ImagePreview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A257D2C1E20840028180F /* ImagePreview.storyboard */; };
+		BE3A25B82C1E38C20028180F /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A257F2C1E20E30028180F /* ImagePreviewViewController.swift */; };
+		BE3A25B92C1E38D30028180F /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A257F2C1E20E30028180F /* ImagePreviewViewController.swift */; };
+		BE3A25BA2C1E38D70028180F /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25732C1E13470028180F /* PostDetailsViewController.swift */; };
+		BE3A25BB2C1E38E30028180F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA93B22C1DDDF20081CD7A /* UIView+Extensions.swift */; };
+		BE3A25BC2C1E38F10028180F /* PostImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25782C1E19080028180F /* PostImagesTableViewCell.swift */; };
+		BE3A25BD2C1E38F80028180F /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE176D2C1D910E00AAE1A6 /* PostTableViewCell.swift */; };
+		BE3A25BE2C1E39060028180F /* PostImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17882C1DBB3900AAE1A6 /* PostImageCollectionViewCell.swift */; };
+		BE760E592C1EC97300A42672 /* PostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAE17622C1D8F7F00AAE1A6 /* PostList.storyboard */; };
+		BE760E5A2C1EC97600A42672 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAE176E2C1D910E00AAE1A6 /* PostTableViewCell.xib */; };
+		BE760E5B2C1ECA0D00A42672 /* PostImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAE17892C1DBB3900AAE1A6 /* PostImageCollectionViewCell.xib */; };
+		BE760E5C2C1ECA1600A42672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAE171A2C1AFDE400AAE1A6 /* LaunchScreen.storyboard */; };
+		BE760E5D2C1ECA1700A42672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAE171A2C1AFDE400AAE1A6 /* LaunchScreen.storyboard */; };
+		BE760E5E2C1ECB3300A42672 /* TeletronicsAssessment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17742C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodeld */; };
+		BE760E5F2C1ECB3400A42672 /* TeletronicsAssessment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17742C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodeld */; };
+		BE760E612C1ECEE100A42672 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E602C1ECEE100A42672 /* PostModel.swift */; };
+		BE760E632C1ECEED00A42672 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E622C1ECEED00A42672 /* PhotoModel.swift */; };
+		BE760E652C1ECF0600A42672 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E642C1ECF0600A42672 /* AlbumModel.swift */; };
+		BE760E662C1ECF1100A42672 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E642C1ECF0600A42672 /* AlbumModel.swift */; };
+		BE760E672C1ECF1100A42672 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E642C1ECF0600A42672 /* AlbumModel.swift */; };
+		BE760E682C1ECF1400A42672 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E622C1ECEED00A42672 /* PhotoModel.swift */; };
+		BE760E692C1ECF1500A42672 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E622C1ECEED00A42672 /* PhotoModel.swift */; };
+		BE760E6A2C1ECF1700A42672 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E602C1ECEE100A42672 /* PostModel.swift */; };
+		BE760E6B2C1ECF1700A42672 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE760E602C1ECEE100A42672 /* PostModel.swift */; };
+		BEAE17102C1AFDE300AAE1A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE170F2C1AFDE300AAE1A6 /* AppDelegate.swift */; };
+		BEAE17192C1AFDE400AAE1A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAE17182C1AFDE400AAE1A6 /* Assets.xcassets */; };
+		BEAE171C2C1AFDE400AAE1A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAE171A2C1AFDE400AAE1A6 /* LaunchScreen.storyboard */; };
+		BEAE17272C1AFDE500AAE1A6 /* TeletronincsAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17262C1AFDE500AAE1A6 /* TeletronincsAssessmentTests.swift */; };
+		BEAE17312C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17302C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests.swift */; };
+		BEAE17332C1AFDE500AAE1A6 /* TeletronincsAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17322C1AFDE500AAE1A6 /* TeletronincsAssessmentUITestsLaunchTests.swift */; };
+		BEAE175A2C1D833D00AAE1A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17592C1D833D00AAE1A6 /* NetworkManager.swift */; };
+		BEAE175C2C1D83F800AAE1A6 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE175B2C1D83F800AAE1A6 /* ErrorHandler.swift */; };
+		BEAE175F2C1D8E9D00AAE1A6 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE175E2C1D8E9D00AAE1A6 /* ImageManager.swift */; };
+		BEAE17612C1D8F7700AAE1A6 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17602C1D8F7700AAE1A6 /* PostListViewController.swift */; };
+		BEAE17632C1D8F7F00AAE1A6 /* PostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAE17622C1D8F7F00AAE1A6 /* PostList.storyboard */; };
+		BEAE17652C1D8FBC00AAE1A6 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17642C1D8FBC00AAE1A6 /* PostListViewModel.swift */; };
+		BEAE17672C1D8FE000AAE1A6 /* PostListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17662C1D8FE000AAE1A6 /* PostListCoordinator.swift */; };
+		BEAE17692C1D903B00AAE1A6 /* PostListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17682C1D903B00AAE1A6 /* PostListService.swift */; };
+		BEAE176F2C1D910E00AAE1A6 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE176D2C1D910E00AAE1A6 /* PostTableViewCell.swift */; };
+		BEAE17702C1D910E00AAE1A6 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAE176E2C1D910E00AAE1A6 /* PostTableViewCell.xib */; };
+		BEAE17732C1D933B00AAE1A6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAE17722C1D933B00AAE1A6 /* CoreData.framework */; };
+		BEAE17762C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17742C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodeld */; };
+		BEAE17782C1D957A00AAE1A6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17772C1D957A00AAE1A6 /* CoreDataStack.swift */; };
+		BEAE17852C1DA87800AAE1A6 /* AlbumEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE177F2C1DA87800AAE1A6 /* AlbumEntity+CoreDataClass.swift */; };
+		BEAE17862C1DA87800AAE1A6 /* AlbumEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17802C1DA87800AAE1A6 /* AlbumEntity+CoreDataProperties.swift */; };
+		BEAE178A2C1DBB3900AAE1A6 /* PostImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAE17882C1DBB3900AAE1A6 /* PostImageCollectionViewCell.swift */; };
+		BEAE178B2C1DBB3900AAE1A6 /* PostImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEAE17892C1DBB3900AAE1A6 /* PostImageCollectionViewCell.xib */; };
+		BECA93B32C1DDDF20081CD7A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA93B22C1DDDF20081CD7A /* UIView+Extensions.swift */; };
+		C105D71987AEBC988978575D /* Pods_TeletronincsAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A5D0B5507A794E5F7B859E /* Pods_TeletronincsAssessment.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEAE17232C1AFDE500AAE1A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAE17042C1AFDE200AAE1A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEAE170B2C1AFDE300AAE1A6;
+			remoteInfo = TeletronincsAssessment;
+		};
+		BEAE172D2C1AFDE500AAE1A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAE17042C1AFDE200AAE1A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEAE170B2C1AFDE300AAE1A6;
+			remoteInfo = TeletronincsAssessment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A5D0B5507A794E5F7B859E /* Pods_TeletronincsAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeletronincsAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA544D60532BD8459DA1B6D /* Pods_TeletronincsAssessmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeletronincsAssessmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15279A1B0A3EA6BCD7DA7D4C /* Pods-TeletronincsAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeletronincsAssessment.debug.xcconfig"; path = "Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment.debug.xcconfig"; sourceTree = "<group>"; };
+		49A43DF2CEBED334B81B5D5A /* Pods_TeletronincsAssessment_TeletronincsAssessmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeletronincsAssessment_TeletronincsAssessmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80224725D5CABE63BC2E271C /* Pods-TeletronincsAssessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeletronincsAssessmentTests.release.xcconfig"; path = "Target Support Files/Pods-TeletronincsAssessmentTests/Pods-TeletronincsAssessmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2509F3439BE22D4A7A5589A /* Pods-TeletronincsAssessmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeletronincsAssessmentTests.debug.xcconfig"; path = "Target Support Files/Pods-TeletronincsAssessmentTests/Pods-TeletronincsAssessmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE1FA7F92C1ED4340094F518 /* PostEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BE1FA7FA2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BE1FA8012C1ED6690094F518 /* PostListViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewControllerUITests.swift; sourceTree = "<group>"; };
+		BE3A256E2C1E131D0028180F /* PostDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsCoordinator.swift; sourceTree = "<group>"; };
+		BE3A25732C1E13470028180F /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		BE3A25752C1E13B50028180F /* PostDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostDetails.storyboard; sourceTree = "<group>"; };
+		BE3A25782C1E19080028180F /* PostImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImagesTableViewCell.swift; sourceTree = "<group>"; };
+		BE3A25792C1E19080028180F /* PostImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostImagesTableViewCell.xib; sourceTree = "<group>"; };
+		BE3A257D2C1E20840028180F /* ImagePreview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePreview.storyboard; sourceTree = "<group>"; };
+		BE3A257F2C1E20E30028180F /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		BE3A25822C1E21960028180F /* ImagePreviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewCoordinator.swift; sourceTree = "<group>"; };
+		BE3A25842C1E28520028180F /* PhotoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BE3A25852C1E28520028180F /* PhotoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BE3A25882C1E346C0028180F /* PostListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModelTests.swift; sourceTree = "<group>"; };
+		BE760E602C1ECEE100A42672 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		BE760E622C1ECEED00A42672 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		BE760E642C1ECF0600A42672 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		BEAE170C2C1AFDE300AAE1A6 /* TeletronincsAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeletronincsAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAE170F2C1AFDE300AAE1A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEAE17182C1AFDE400AAE1A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEAE171B2C1AFDE400AAE1A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEAE171D2C1AFDE400AAE1A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEAE17222C1AFDE500AAE1A6 /* TeletronincsAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeletronincsAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAE17262C1AFDE500AAE1A6 /* TeletronincsAssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeletronincsAssessmentTests.swift; sourceTree = "<group>"; };
+		BEAE172C2C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeletronincsAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAE17302C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeletronincsAssessmentUITests.swift; sourceTree = "<group>"; };
+		BEAE17322C1AFDE500AAE1A6 /* TeletronincsAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeletronincsAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BEAE17592C1D833D00AAE1A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BEAE175B2C1D83F800AAE1A6 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		BEAE175E2C1D8E9D00AAE1A6 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		BEAE17602C1D8F7700AAE1A6 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		BEAE17622C1D8F7F00AAE1A6 /* PostList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostList.storyboard; sourceTree = "<group>"; };
+		BEAE17642C1D8FBC00AAE1A6 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		BEAE17662C1D8FE000AAE1A6 /* PostListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCoordinator.swift; sourceTree = "<group>"; };
+		BEAE17682C1D903B00AAE1A6 /* PostListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListService.swift; sourceTree = "<group>"; };
+		BEAE176D2C1D910E00AAE1A6 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		BEAE176E2C1D910E00AAE1A6 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		BEAE17722C1D933B00AAE1A6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEAE17752C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeletronicsAssessment.xcdatamodel; sourceTree = "<group>"; };
+		BEAE17772C1D957A00AAE1A6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		BEAE177F2C1DA87800AAE1A6 /* AlbumEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BEAE17802C1DA87800AAE1A6 /* AlbumEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BEAE17882C1DBB3900AAE1A6 /* PostImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		BEAE17892C1DBB3900AAE1A6 /* PostImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		BECA93B22C1DDDF20081CD7A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C339086F3FB6403DF6758D2A /* Pods-TeletronincsAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeletronincsAssessment.release.xcconfig"; path = "Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment.release.xcconfig"; sourceTree = "<group>"; };
+		D89C463429864B1D9A06B32B /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0C5D14ED889EA562571A14 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig"; path = "Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEAE17092C1AFDE300AAE1A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAE17732C1D933B00AAE1A6 /* CoreData.framework in Frameworks */,
+				C105D71987AEBC988978575D /* Pods_TeletronincsAssessment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE171F2C1AFDE500AAE1A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8378A19F7E36EA4D645425 /* Pods_TeletronincsAssessmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE17292C1AFDE500AAE1A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677A7F09072F7E3E2BDD16CF /* Pods_TeletronincsAssessment_TeletronincsAssessmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE3A256C2C1E13000028180F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A256D2C1E130B0028180F /* PostDetails */,
+				BEAE173F2C1D7DC600AAE1A6 /* PostList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BE3A256D2C1E130B0028180F /* PostDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A25702C1E13230028180F /* View */,
+				BE3A256E2C1E131D0028180F /* PostDetailsCoordinator.swift */,
+			);
+			path = PostDetails;
+			sourceTree = "<group>";
+		};
+		BE3A25702C1E13230028180F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A257C2C1E206C0028180F /* ImagePreview */,
+				BE3A25772C1E18E70028180F /* TableViewCell */,
+				BE3A25732C1E13470028180F /* PostDetailsViewController.swift */,
+				BE3A25752C1E13B50028180F /* PostDetails.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE3A25772C1E18E70028180F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A25782C1E19080028180F /* PostImagesTableViewCell.swift */,
+				BE3A25792C1E19080028180F /* PostImagesTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		BE3A257C2C1E206C0028180F /* ImagePreview */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A25812C1E21810028180F /* View */,
+				BE3A25822C1E21960028180F /* ImagePreviewCoordinator.swift */,
+			);
+			path = ImagePreview;
+			sourceTree = "<group>";
+		};
+		BE3A25812C1E21810028180F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A257D2C1E20840028180F /* ImagePreview.storyboard */,
+				BE3A257F2C1E20E30028180F /* ImagePreviewViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEAE17032C1AFDE200AAE1A6 = {
+			isa = PBXGroup;
+			children = (
+				BEAE170E2C1AFDE300AAE1A6 /* TeletronincsAssessment */,
+				BEAE17252C1AFDE500AAE1A6 /* TeletronincsAssessmentTests */,
+				BEAE172F2C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests */,
+				BEAE170D2C1AFDE300AAE1A6 /* Products */,
+				BEAE17712C1D933B00AAE1A6 /* Frameworks */,
+				E8815764304E3828CDDC2FA5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BEAE170D2C1AFDE300AAE1A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE170C2C1AFDE300AAE1A6 /* TeletronincsAssessment.app */,
+				BEAE17222C1AFDE500AAE1A6 /* TeletronincsAssessmentTests.xctest */,
+				BEAE172C2C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEAE170E2C1AFDE300AAE1A6 /* TeletronincsAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A256C2C1E13000028180F /* Modules */,
+				BEAE17442C1D7E2400AAE1A6 /* Resources */,
+				BEAE17432C1D7E1700AAE1A6 /* Helpers */,
+				BEAE17182C1AFDE400AAE1A6 /* Assets.xcassets */,
+				BEAE171A2C1AFDE400AAE1A6 /* LaunchScreen.storyboard */,
+				BEAE171D2C1AFDE400AAE1A6 /* Info.plist */,
+			);
+			path = TeletronincsAssessment;
+			sourceTree = "<group>";
+		};
+		BEAE17252C1AFDE500AAE1A6 /* TeletronincsAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17262C1AFDE500AAE1A6 /* TeletronincsAssessmentTests.swift */,
+				BE3A25882C1E346C0028180F /* PostListViewModelTests.swift */,
+			);
+			path = TeletronincsAssessmentTests;
+			sourceTree = "<group>";
+		};
+		BEAE172F2C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17302C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests.swift */,
+				BE1FA8012C1ED6690094F518 /* PostListViewControllerUITests.swift */,
+				BEAE17322C1AFDE500AAE1A6 /* TeletronincsAssessmentUITestsLaunchTests.swift */,
+			);
+			path = TeletronincsAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		BEAE173F2C1D7DC600AAE1A6 /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE174F2C1D7FAD00AAE1A6 /* Model */,
+				BEAE17422C1D7E0C00AAE1A6 /* View */,
+				BEAE17412C1D7DF800AAE1A6 /* Service */,
+				BEAE17402C1D7DEC00AAE1A6 /* ViewModel */,
+				BEAE17662C1D8FE000AAE1A6 /* PostListCoordinator.swift */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		BEAE17402C1D7DEC00AAE1A6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17642C1D8FBC00AAE1A6 /* PostListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BEAE17412C1D7DF800AAE1A6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17682C1D903B00AAE1A6 /* PostListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BEAE17422C1D7E0C00AAE1A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17872C1DBB1E00AAE1A6 /* CollectionViewCell */,
+				BEAE176A2C1D90EB00AAE1A6 /* TableViewCell */,
+				BEAE17602C1D8F7700AAE1A6 /* PostListViewController.swift */,
+				BEAE17622C1D8F7F00AAE1A6 /* PostList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEAE17432C1D7E1700AAE1A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17592C1D833D00AAE1A6 /* NetworkManager.swift */,
+				BEAE175B2C1D83F800AAE1A6 /* ErrorHandler.swift */,
+				BEAE175E2C1D8E9D00AAE1A6 /* ImageManager.swift */,
+				BEAE17772C1D957A00AAE1A6 /* CoreDataStack.swift */,
+				BECA93B22C1DDDF20081CD7A /* UIView+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BEAE17442C1D7E2400AAE1A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE170F2C1AFDE300AAE1A6 /* AppDelegate.swift */,
+				BEAE17742C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEAE174F2C1D7FAD00AAE1A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17532C1D822600AAE1A6 /* Album */,
+				BEAE17502C1D81B600AAE1A6 /* Post */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEAE17502C1D81B600AAE1A6 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				BE1FA7F92C1ED4340094F518 /* PostEntity+CoreDataClass.swift */,
+				BE1FA7FA2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift */,
+				BE760E602C1ECEE100A42672 /* PostModel.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		BEAE17532C1D822600AAE1A6 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE177F2C1DA87800AAE1A6 /* AlbumEntity+CoreDataClass.swift */,
+				BE760E642C1ECF0600A42672 /* AlbumModel.swift */,
+				BEAE17802C1DA87800AAE1A6 /* AlbumEntity+CoreDataProperties.swift */,
+				BEAE17562C1D823F00AAE1A6 /* Photo */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		BEAE17562C1D823F00AAE1A6 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A25852C1E28520028180F /* PhotoEntity+CoreDataClass.swift */,
+				BE3A25842C1E28520028180F /* PhotoEntity+CoreDataProperties.swift */,
+				BE760E622C1ECEED00A42672 /* PhotoModel.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		BEAE176A2C1D90EB00AAE1A6 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE176D2C1D910E00AAE1A6 /* PostTableViewCell.swift */,
+				BEAE176E2C1D910E00AAE1A6 /* PostTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		BEAE17712C1D933B00AAE1A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17722C1D933B00AAE1A6 /* CoreData.framework */,
+				03A5D0B5507A794E5F7B859E /* Pods_TeletronincsAssessment.framework */,
+				49A43DF2CEBED334B81B5D5A /* Pods_TeletronincsAssessment_TeletronincsAssessmentUITests.framework */,
+				0DA544D60532BD8459DA1B6D /* Pods_TeletronincsAssessmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEAE17872C1DBB1E00AAE1A6 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE17882C1DBB3900AAE1A6 /* PostImageCollectionViewCell.swift */,
+				BEAE17892C1DBB3900AAE1A6 /* PostImageCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E8815764304E3828CDDC2FA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15279A1B0A3EA6BCD7DA7D4C /* Pods-TeletronincsAssessment.debug.xcconfig */,
+				C339086F3FB6403DF6758D2A /* Pods-TeletronincsAssessment.release.xcconfig */,
+				D89C463429864B1D9A06B32B /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig */,
+				FB0C5D14ED889EA562571A14 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig */,
+				A2509F3439BE22D4A7A5589A /* Pods-TeletronincsAssessmentTests.debug.xcconfig */,
+				80224725D5CABE63BC2E271C /* Pods-TeletronincsAssessmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEAE170B2C1AFDE300AAE1A6 /* TeletronincsAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAE17362C1AFDE500AAE1A6 /* Build configuration list for PBXNativeTarget "TeletronincsAssessment" */;
+			buildPhases = (
+				EB1B24B794D5CDB4A0718375 /* [CP] Check Pods Manifest.lock */,
+				BEAE17082C1AFDE300AAE1A6 /* Sources */,
+				BEAE17092C1AFDE300AAE1A6 /* Frameworks */,
+				BEAE170A2C1AFDE300AAE1A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeletronincsAssessment;
+			productName = TeletronincsAssessment;
+			productReference = BEAE170C2C1AFDE300AAE1A6 /* TeletronincsAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEAE17212C1AFDE500AAE1A6 /* TeletronincsAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAE17392C1AFDE500AAE1A6 /* Build configuration list for PBXNativeTarget "TeletronincsAssessmentTests" */;
+			buildPhases = (
+				AFC55BE69B28BD11BBD45DEE /* [CP] Check Pods Manifest.lock */,
+				BEAE171E2C1AFDE500AAE1A6 /* Sources */,
+				BEAE171F2C1AFDE500AAE1A6 /* Frameworks */,
+				BEAE17202C1AFDE500AAE1A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEAE17242C1AFDE500AAE1A6 /* PBXTargetDependency */,
+			);
+			name = TeletronincsAssessmentTests;
+			productName = TeletronincsAssessmentTests;
+			productReference = BEAE17222C1AFDE500AAE1A6 /* TeletronincsAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEAE172B2C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAE173C2C1AFDE500AAE1A6 /* Build configuration list for PBXNativeTarget "TeletronincsAssessmentUITests" */;
+			buildPhases = (
+				BD2C713CE28893AC21657189 /* [CP] Check Pods Manifest.lock */,
+				BEAE17282C1AFDE500AAE1A6 /* Sources */,
+				BEAE17292C1AFDE500AAE1A6 /* Frameworks */,
+				BEAE172A2C1AFDE500AAE1A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEAE172E2C1AFDE500AAE1A6 /* PBXTargetDependency */,
+			);
+			name = TeletronincsAssessmentUITests;
+			productName = TeletronincsAssessmentUITests;
+			productReference = BEAE172C2C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEAE17042C1AFDE200AAE1A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					BEAE170B2C1AFDE300AAE1A6 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					BEAE17212C1AFDE500AAE1A6 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = BEAE170B2C1AFDE300AAE1A6;
+					};
+					BEAE172B2C1AFDE500AAE1A6 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = BEAE170B2C1AFDE300AAE1A6;
+					};
+				};
+			};
+			buildConfigurationList = BEAE17072C1AFDE300AAE1A6 /* Build configuration list for PBXProject "TeletronincsAssessment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEAE17032C1AFDE200AAE1A6;
+			productRefGroup = BEAE170D2C1AFDE300AAE1A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEAE170B2C1AFDE300AAE1A6 /* TeletronincsAssessment */,
+				BEAE17212C1AFDE500AAE1A6 /* TeletronincsAssessmentTests */,
+				BEAE172B2C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEAE170A2C1AFDE300AAE1A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAE171C2C1AFDE400AAE1A6 /* LaunchScreen.storyboard in Resources */,
+				BE3A25762C1E13B50028180F /* PostDetails.storyboard in Resources */,
+				BEAE17632C1D8F7F00AAE1A6 /* PostList.storyboard in Resources */,
+				BE3A257E2C1E20840028180F /* ImagePreview.storyboard in Resources */,
+				BEAE178B2C1DBB3900AAE1A6 /* PostImageCollectionViewCell.xib in Resources */,
+				BE3A257B2C1E19080028180F /* PostImagesTableViewCell.xib in Resources */,
+				BEAE17192C1AFDE400AAE1A6 /* Assets.xcassets in Resources */,
+				BEAE17702C1D910E00AAE1A6 /* PostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE17202C1AFDE500AAE1A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE760E592C1EC97300A42672 /* PostList.storyboard in Resources */,
+				BE760E5C2C1ECA1600A42672 /* LaunchScreen.storyboard in Resources */,
+				BE760E5B2C1ECA0D00A42672 /* PostImageCollectionViewCell.xib in Resources */,
+				BE760E5A2C1EC97600A42672 /* PostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE172A2C1AFDE500AAE1A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3A25A02C1E37D50028180F /* PostImageCollectionViewCell.xib in Resources */,
+				BE3A25B62C1E38BC0028180F /* ImagePreview.storyboard in Resources */,
+				BE3A25B02C1E38AB0028180F /* PostDetails.storyboard in Resources */,
+				BE3A25B32C1E38B30028180F /* PostImagesTableViewCell.xib in Resources */,
+				BE760E5D2C1ECA1700A42672 /* LaunchScreen.storyboard in Resources */,
+				BE3A25AD2C1E38960028180F /* PostList.storyboard in Resources */,
+				BE3A25982C1E37A30028180F /* PostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFC55BE69B28BD11BBD45DEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeletronincsAssessmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD2C713CE28893AC21657189 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB1B24B794D5CDB4A0718375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeletronincsAssessment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEAE17082C1AFDE300AAE1A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAE17612C1D8F7700AAE1A6 /* PostListViewController.swift in Sources */,
+				BE3A25832C1E21960028180F /* ImagePreviewCoordinator.swift in Sources */,
+				BE1FA7FB2C1ED4340094F518 /* PostEntity+CoreDataClass.swift in Sources */,
+				BEAE175A2C1D833D00AAE1A6 /* NetworkManager.swift in Sources */,
+				BEAE17672C1D8FE000AAE1A6 /* PostListCoordinator.swift in Sources */,
+				BEAE17692C1D903B00AAE1A6 /* PostListService.swift in Sources */,
+				BE3A25872C1E28520028180F /* PhotoEntity+CoreDataClass.swift in Sources */,
+				BE3A25862C1E28520028180F /* PhotoEntity+CoreDataProperties.swift in Sources */,
+				BE1FA7FC2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift in Sources */,
+				BEAE178A2C1DBB3900AAE1A6 /* PostImageCollectionViewCell.swift in Sources */,
+				BEAE17852C1DA87800AAE1A6 /* AlbumEntity+CoreDataClass.swift in Sources */,
+				BEAE17762C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodeld in Sources */,
+				BE3A25742C1E13470028180F /* PostDetailsViewController.swift in Sources */,
+				BEAE17782C1D957A00AAE1A6 /* CoreDataStack.swift in Sources */,
+				BE760E652C1ECF0600A42672 /* AlbumModel.swift in Sources */,
+				BE3A257A2C1E19080028180F /* PostImagesTableViewCell.swift in Sources */,
+				BEAE17102C1AFDE300AAE1A6 /* AppDelegate.swift in Sources */,
+				BECA93B32C1DDDF20081CD7A /* UIView+Extensions.swift in Sources */,
+				BEAE17862C1DA87800AAE1A6 /* AlbumEntity+CoreDataProperties.swift in Sources */,
+				BEAE17652C1D8FBC00AAE1A6 /* PostListViewModel.swift in Sources */,
+				BEAE175C2C1D83F800AAE1A6 /* ErrorHandler.swift in Sources */,
+				BEAE175F2C1D8E9D00AAE1A6 /* ImageManager.swift in Sources */,
+				BE760E612C1ECEE100A42672 /* PostModel.swift in Sources */,
+				BEAE176F2C1D910E00AAE1A6 /* PostTableViewCell.swift in Sources */,
+				BE3A25802C1E20E30028180F /* ImagePreviewViewController.swift in Sources */,
+				BE760E632C1ECEED00A42672 /* PhotoModel.swift in Sources */,
+				BE3A256F2C1E131D0028180F /* PostDetailsCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE171E2C1AFDE500AAE1A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3A25BB2C1E38E30028180F /* UIView+Extensions.swift in Sources */,
+				BE3A25892C1E346C0028180F /* PostListViewModelTests.swift in Sources */,
+				BE3A25AF2C1E38A60028180F /* PostDetailsCoordinator.swift in Sources */,
+				BE1FA7FD2C1ED4400094F518 /* PostEntity+CoreDataClass.swift in Sources */,
+				BE3A25AA2C1E387B0028180F /* PostListViewController.swift in Sources */,
+				BE3A25BE2C1E39060028180F /* PostImageCollectionViewCell.swift in Sources */,
+				BE760E6A2C1ECF1700A42672 /* PostModel.swift in Sources */,
+				BE3A25932C1E370A0028180F /* PhotoEntity+CoreDataProperties.swift in Sources */,
+				BE3A258B2C1E34AA0028180F /* PhotoEntity+CoreDataClass.swift in Sources */,
+				BE3A25922C1E37070028180F /* AlbumEntity+CoreDataProperties.swift in Sources */,
+				BE3A25912C1E36DA0028180F /* NetworkManager.swift in Sources */,
+				BE3A25902C1E34D70028180F /* CoreDataStack.swift in Sources */,
+				BE1FA7FF2C1ED4430094F518 /* PostEntity+CoreDataProperties.swift in Sources */,
+				BE3A25BA2C1E38D70028180F /* PostDetailsViewController.swift in Sources */,
+				BE3A25BC2C1E38F10028180F /* PostImagesTableViewCell.swift in Sources */,
+				BEAE17272C1AFDE500AAE1A6 /* TeletronincsAssessmentTests.swift in Sources */,
+				BE760E662C1ECF1100A42672 /* AlbumModel.swift in Sources */,
+				BE3A25B92C1E38D30028180F /* ImagePreviewViewController.swift in Sources */,
+				BE3A25BD2C1E38F80028180F /* PostTableViewCell.swift in Sources */,
+				BE3A258D2C1E34AF0028180F /* AlbumEntity+CoreDataClass.swift in Sources */,
+				BE3A25AC2C1E38900028180F /* PostListCoordinator.swift in Sources */,
+				BE3A25A32C1E37FE0028180F /* ImageManager.swift in Sources */,
+				BE3A25B52C1E38B90028180F /* ImagePreviewCoordinator.swift in Sources */,
+				BE3A258F2C1E34CE0028180F /* ErrorHandler.swift in Sources */,
+				BE3A258E2C1E34C00028180F /* PostListService.swift in Sources */,
+				BE3A258A2C1E349F0028180F /* PostListViewModel.swift in Sources */,
+				BE760E682C1ECF1400A42672 /* PhotoModel.swift in Sources */,
+				BE760E5E2C1ECB3300A42672 /* TeletronicsAssessment.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEAE17282C1AFDE500AAE1A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3A25A42C1E38290028180F /* PostListViewModel.swift in Sources */,
+				BE3A25B42C1E38B80028180F /* ImagePreviewCoordinator.swift in Sources */,
+				BE3A259A2C1E37C20028180F /* AlbumEntity+CoreDataProperties.swift in Sources */,
+				BE1FA7FE2C1ED4410094F518 /* PostEntity+CoreDataClass.swift in Sources */,
+				BE1FA8022C1ED6690094F518 /* PostListViewControllerUITests.swift in Sources */,
+				BE3A25B22C1E38B10028180F /* PostImagesTableViewCell.swift in Sources */,
+				BE3A259F2C1E37D10028180F /* PostImageCollectionViewCell.swift in Sources */,
+				BE3A25A82C1E38620028180F /* CoreDataStack.swift in Sources */,
+				BE760E5F2C1ECB3400A42672 /* TeletronicsAssessment.xcdatamodeld in Sources */,
+				BE3A259C2C1E37C60028180F /* PhotoEntity+CoreDataProperties.swift in Sources */,
+				BEAE17332C1AFDE500AAE1A6 /* TeletronincsAssessmentUITestsLaunchTests.swift in Sources */,
+				BE3A25A62C1E38480028180F /* ErrorHandler.swift in Sources */,
+				BE3A259B2C1E37C40028180F /* PhotoEntity+CoreDataClass.swift in Sources */,
+				BE1FA8002C1ED4430094F518 /* PostEntity+CoreDataProperties.swift in Sources */,
+				BE3A25A12C1E37E90028180F /* UIView+Extensions.swift in Sources */,
+				BE3A25AE2C1E38A40028180F /* PostDetailsCoordinator.swift in Sources */,
+				BEAE17312C1AFDE500AAE1A6 /* TeletronincsAssessmentUITests.swift in Sources */,
+				BE3A25A72C1E38530028180F /* NetworkManager.swift in Sources */,
+				BE3A25A52C1E383F0028180F /* PostListService.swift in Sources */,
+				BE760E672C1ECF1100A42672 /* AlbumModel.swift in Sources */,
+				BE3A25AB2C1E388F0028180F /* PostListCoordinator.swift in Sources */,
+				BE3A25A92C1E387A0028180F /* PostListViewController.swift in Sources */,
+				BE760E6B2C1ECF1700A42672 /* PostModel.swift in Sources */,
+				BE3A25B82C1E38C20028180F /* ImagePreviewViewController.swift in Sources */,
+				BE3A25972C1E379C0028180F /* PostTableViewCell.swift in Sources */,
+				BE3A25992C1E37C00028180F /* AlbumEntity+CoreDataClass.swift in Sources */,
+				BE3A25A22C1E37FD0028180F /* ImageManager.swift in Sources */,
+				BE760E692C1ECF1500A42672 /* PhotoModel.swift in Sources */,
+				BE3A25B12C1E38AE0028180F /* PostDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEAE17242C1AFDE500AAE1A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEAE170B2C1AFDE300AAE1A6 /* TeletronincsAssessment */;
+			targetProxy = BEAE17232C1AFDE500AAE1A6 /* PBXContainerItemProxy */;
+		};
+		BEAE172E2C1AFDE500AAE1A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEAE170B2C1AFDE300AAE1A6 /* TeletronincsAssessment */;
+			targetProxy = BEAE172D2C1AFDE500AAE1A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEAE171A2C1AFDE400AAE1A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAE171B2C1AFDE400AAE1A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEAE17342C1AFDE500AAE1A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEAE17352C1AFDE500AAE1A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEAE17372C1AFDE500AAE1A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15279A1B0A3EA6BCD7DA7D4C /* Pods-TeletronincsAssessment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5EH2B7Q9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeletronincsAssessment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = PostList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TeletronicsAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEAE17382C1AFDE500AAE1A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C339086F3FB6403DF6758D2A /* Pods-TeletronincsAssessment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5EH2B7Q9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeletronincsAssessment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = PostList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TeletronicsAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEAE173A2C1AFDE500AAE1A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2509F3439BE22D4A7A5589A /* Pods-TeletronincsAssessmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5EH2B7Q9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TeletronincsAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeletronincsAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TeletronincsAssessment";
+			};
+			name = Debug;
+		};
+		BEAE173B2C1AFDE500AAE1A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80224725D5CABE63BC2E271C /* Pods-TeletronincsAssessmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5EH2B7Q9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TeletronincsAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeletronincsAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TeletronincsAssessment";
+			};
+			name = Release;
+		};
+		BEAE173D2C1AFDE500AAE1A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89C463429864B1D9A06B32B /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5EH2B7Q9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TeletronincsAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeletronincsAssessment;
+			};
+			name = Debug;
+		};
+		BEAE173E2C1AFDE500AAE1A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0C5D14ED889EA562571A14 /* Pods-TeletronincsAssessment-TeletronincsAssessmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5EH2B7Q9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TeletronincsAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeletronincsAssessment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEAE17072C1AFDE300AAE1A6 /* Build configuration list for PBXProject "TeletronincsAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAE17342C1AFDE500AAE1A6 /* Debug */,
+				BEAE17352C1AFDE500AAE1A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAE17362C1AFDE500AAE1A6 /* Build configuration list for PBXNativeTarget "TeletronincsAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAE17372C1AFDE500AAE1A6 /* Debug */,
+				BEAE17382C1AFDE500AAE1A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAE17392C1AFDE500AAE1A6 /* Build configuration list for PBXNativeTarget "TeletronincsAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAE173A2C1AFDE500AAE1A6 /* Debug */,
+				BEAE173B2C1AFDE500AAE1A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAE173C2C1AFDE500AAE1A6 /* Build configuration list for PBXNativeTarget "TeletronincsAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAE173D2C1AFDE500AAE1A6 /* Debug */,
+				BEAE173E2C1AFDE500AAE1A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEAE17742C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEAE17752C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodel */,
+			);
+			currentVersion = BEAE17752C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodel */;
+			path = TeletronicsAssessment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEAE17042C1AFDE200AAE1A6 /* Project object */;
+}

@@ -7,6 +7,7 @@
 
 import XCTest
 
+// `PostListViewModel` self.savePostsWithAlbumsAndPhotos(posts: posts)  // comment when performing `UITests`
 final class PostListViewControllerUITests: XCTestCase {
     
     var app: XCUIApplication!

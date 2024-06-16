@@ -14,7 +14,7 @@ class PostImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var postImage: UIImageView!
     
     private var cancellables = Set<AnyCancellable>()
-    let buttonTapSubject = PassthroughSubject<Void, Never>()  // Subject to handle button tap events
+    var buttonTapSubject: (() -> ())?  // Subject to handle button tap events
     var imageUrl: URL?
     
     func setupShowMoreButton(_ indexPath: IndexPath, _ count: Int) {
@@ -43,6 +43,6 @@ class PostImageCollectionViewCell: UICollectionViewCell {
     
     @IBAction func showMoreAction(_ sender: Any) {
         // Handle 'Show More' button tap
-        self.buttonTapSubject.send()  // Send event to the subject
+        self.buttonTapSubject?()  // Send event to the subject
     }
 }

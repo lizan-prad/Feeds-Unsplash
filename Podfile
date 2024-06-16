@@ -6,7 +6,7 @@ target 'TeletronincsAssessment' do
   use_frameworks!
 
   # Pods for TeletronincsAssessment
-  
+  pod 'lottie-ios'
   target 'TeletronincsAssessmentTests' do
     inherit! :search_paths
     # Pods for testing

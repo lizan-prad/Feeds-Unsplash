@@ -108,11 +108,9 @@ extension PostListViewController: UITableViewDataSource, UITableViewDelegate {
         cell.configure(with: post)
         
         // Handle cell's `showMoreSubject` to open post details
-        cell.showMoreSubject
-            .sink { [weak self] post in
-                self?.openPostDetails(post)
-            }
-            .store(in: &cancellables)
+        cell.showMoreSubject = { [weak self] post in
+            self?.openPostDetails(post)
+        }
         
         // Handle cell's `photoTapSubject` to show image preview
         cell.photoTapSubject

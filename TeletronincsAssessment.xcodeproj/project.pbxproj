@@ -16,6 +16,9 @@
 		BE1FA7FF2C1ED4430094F518 /* PostEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA7FA2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift */; };
 		BE1FA8002C1ED4430094F518 /* PostEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA7FA2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift */; };
 		BE1FA8022C1ED6690094F518 /* PostListViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA8012C1ED6690094F518 /* PostListViewControllerUITests.swift */; };
+		BE1FA8052C1F1E130094F518 /* LaunchAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1FA8042C1F1E130094F518 /* LaunchAnimation.storyboard */; };
+		BE1FA8072C1F1E280094F518 /* LaunchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FA8062C1F1E280094F518 /* LaunchAnimationViewController.swift */; };
+		BE1FA80C2C1F20740094F518 /* 7jB9tPbR0f.json in Resources */ = {isa = PBXBuildFile; fileRef = BE1FA80B2C1F20740094F518 /* 7jB9tPbR0f.json */; };
 		BE3A256F2C1E131D0028180F /* PostDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A256E2C1E131D0028180F /* PostDetailsCoordinator.swift */; };
 		BE3A25742C1E13470028180F /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3A25732C1E13470028180F /* PostDetailsViewController.swift */; };
 		BE3A25762C1E13B50028180F /* PostDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3A25752C1E13B50028180F /* PostDetails.storyboard */; };
@@ -143,6 +146,9 @@
 		BE1FA7F92C1ED4340094F518 /* PostEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BE1FA7FA2C1ED4340094F518 /* PostEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BE1FA8012C1ED6690094F518 /* PostListViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewControllerUITests.swift; sourceTree = "<group>"; };
+		BE1FA8042C1F1E130094F518 /* LaunchAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchAnimation.storyboard; sourceTree = "<group>"; };
+		BE1FA8062C1F1E280094F518 /* LaunchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationViewController.swift; sourceTree = "<group>"; };
+		BE1FA80B2C1F20740094F518 /* 7jB9tPbR0f.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 7jB9tPbR0f.json; sourceTree = "<group>"; };
 		BE3A256E2C1E131D0028180F /* PostDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsCoordinator.swift; sourceTree = "<group>"; };
 		BE3A25732C1E13470028180F /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
 		BE3A25752C1E13B50028180F /* PostDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostDetails.storyboard; sourceTree = "<group>"; };
@@ -219,9 +225,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1FA8032C1F1DFC0094F518 /* LaunchAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BE1FA8082C1F1E2E0094F518 /* View */,
+			);
+			path = LaunchAnimation;
+			sourceTree = "<group>";
+		};
+		BE1FA8082C1F1E2E0094F518 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE1FA8042C1F1E130094F518 /* LaunchAnimation.storyboard */,
+				BE1FA8062C1F1E280094F518 /* LaunchAnimationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BE3A256C2C1E13000028180F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BE1FA8032C1F1DFC0094F518 /* LaunchAnimation */,
 				BE3A256D2C1E130B0028180F /* PostDetails */,
 				BEAE173F2C1D7DC600AAE1A6 /* PostList */,
 			);
@@ -383,6 +407,7 @@
 		BEAE17442C1D7E2400AAE1A6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BE1FA80B2C1F20740094F518 /* 7jB9tPbR0f.json */,
 				BEAE170F2C1AFDE300AAE1A6 /* AppDelegate.swift */,
 				BEAE17742C1D936300AAE1A6 /* TeletronicsAssessment.xcdatamodeld */,
 			);
@@ -482,6 +507,7 @@
 				BEAE17082C1AFDE300AAE1A6 /* Sources */,
 				BEAE17092C1AFDE300AAE1A6 /* Frameworks */,
 				BEAE170A2C1AFDE300AAE1A6 /* Resources */,
+				B4AE3E38AC3C81D287EDF328 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -519,6 +545,7 @@
 				BEAE17282C1AFDE500AAE1A6 /* Sources */,
 				BEAE17292C1AFDE500AAE1A6 /* Frameworks */,
 				BEAE172A2C1AFDE500AAE1A6 /* Resources */,
+				41234EE0B5491834EB7B4D15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -582,6 +609,8 @@
 				BE3A25762C1E13B50028180F /* PostDetails.storyboard in Resources */,
 				BEAE17632C1D8F7F00AAE1A6 /* PostList.storyboard in Resources */,
 				BE3A257E2C1E20840028180F /* ImagePreview.storyboard in Resources */,
+				BE1FA8052C1F1E130094F518 /* LaunchAnimation.storyboard in Resources */,
+				BE1FA80C2C1F20740094F518 /* 7jB9tPbR0f.json in Resources */,
 				BEAE178B2C1DBB3900AAE1A6 /* PostImageCollectionViewCell.xib in Resources */,
 				BE3A257B2C1E19080028180F /* PostImagesTableViewCell.xib in Resources */,
 				BEAE17192C1AFDE400AAE1A6 /* Assets.xcassets in Resources */,
@@ -617,6 +646,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		41234EE0B5491834EB7B4D15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests/Pods-TeletronincsAssessment-TeletronincsAssessmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AFC55BE69B28BD11BBD45DEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -637,6 +683,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4AE3E38AC3C81D287EDF328 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeletronincsAssessment/Pods-TeletronincsAssessment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD2C713CE28893AC21657189 /* [CP] Check Pods Manifest.lock */ = {
@@ -710,6 +773,7 @@
 				BECA93B32C1DDDF20081CD7A /* UIView+Extensions.swift in Sources */,
 				BEAE17862C1DA87800AAE1A6 /* AlbumEntity+CoreDataProperties.swift in Sources */,
 				BEAE17652C1D8FBC00AAE1A6 /* PostListViewModel.swift in Sources */,
+				BE1FA8072C1F1E280094F518 /* LaunchAnimationViewController.swift in Sources */,
 				BEAE175C2C1D83F800AAE1A6 /* ErrorHandler.swift in Sources */,
 				BEAE175F2C1D8E9D00AAE1A6 /* ImageManager.swift in Sources */,
 				BE760E612C1ECEE100A42672 /* PostModel.swift in Sources */,
@@ -946,6 +1010,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H5EH2B7Q9N;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TeletronincsAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -975,6 +1040,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H5EH2B7Q9N;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TeletronincsAssessment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

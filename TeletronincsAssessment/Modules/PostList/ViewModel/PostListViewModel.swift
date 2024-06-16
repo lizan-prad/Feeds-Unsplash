@@ -104,7 +104,7 @@ extension PostListViewModel: PostListService {
                 guard let self = self else { return }
                 
                 self.postList = posts
-                self.savePostsWithAlbumsAndPhotos(posts: posts)
+                self.savePostsWithAlbumsAndPhotos(posts: posts)  // comment when performing `UITests`
             })
             .store(in: &cancellables)
     }

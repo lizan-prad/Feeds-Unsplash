@@ -9,18 +9,18 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
+    var postListCoordinator: PostListCoordinator?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         if let window = self.window {
-           let coordinator = PostListCoordinator(window: window)
-            coordinator.start()
+            postListCoordinator = PostListCoordinator(window: window)
+            postListCoordinator?.start()
         }
         window?.overrideUserInterfaceStyle = .dark
         return true
     }
-
 }
 

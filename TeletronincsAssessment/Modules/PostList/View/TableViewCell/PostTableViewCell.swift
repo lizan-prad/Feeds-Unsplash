@@ -32,7 +32,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: ContentSizeCollectionView!
     
     // Subjects to communicate cell events to the outside
-    let showMoreSubject = PassthroughSubject<Post?, Never>()
+    var showMoreSubject: ((Post?) -> ())?
     let photoTapSubject = PassthroughSubject<Photo?, Never>()
     
     private var cancellables = Set<AnyCancellable>()
@@ -86,9 +86,9 @@ extension PostTableViewCell: UICollectionViewDataSource, UICollectionViewDelegat
         cell.loadImage()
         
         // Handle button tap to trigger `showMoreSubject`
-        cell.buttonTapSubject.sink { [weak self] _ in
-            self?.showMoreSubject.send(self?.post)
-        }.store(in: &cancellables)
+        cell.buttonTapSubject = { [weak self] in
+            self?.showMoreSubject?(self?.post)
+        }
         
         return cell
     }

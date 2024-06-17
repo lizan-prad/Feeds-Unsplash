@@ -19,6 +19,17 @@ class CoreDataStack {
     // Persistent container for CoreData
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "TeletronicsAssessment")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+    
+    // MARK: Use this while performing Unit Tests, Persistent container for CoreData Tests
+    lazy var persistentContainerTest: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "TeletronicsAssessment")
         let description = NSPersistentStoreDescription()
         description.type = NSInMemoryStoreType // Use in-memory store for testing
         container.persistentStoreDescriptions = [description]
@@ -39,10 +50,14 @@ class CoreDataStack {
 
     // Save changes to the context
     func saveContext() {
-        do {
-            try context.save()
-        } catch {
-            print("Error saving context: \(error.localizedDescription)")
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                // Handle error appropriately
+                print("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
         }
     }
 

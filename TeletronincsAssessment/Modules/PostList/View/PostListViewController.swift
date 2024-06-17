@@ -21,7 +21,7 @@ class PostListViewController: UIViewController {
         setupAccessibility()
         setupTableView()
         setupBindings()
-        viewModel.fetchPhotos(1)
+        viewModel.fetchPostsWithAlbums(page: 1)
         setupViews()
     }
     

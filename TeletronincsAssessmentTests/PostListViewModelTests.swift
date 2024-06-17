@@ -22,6 +22,7 @@ class PostListViewModelTests: XCTestCase {
         // Initialize dependencies
         
         mockService = MockPostListService()
+        // Use in-memory store for testing, use the `persistantContainer2` for testing
         mockDataManager = MockCoreDataStack()
         
         viewModel = PostListViewModel()
@@ -58,8 +59,8 @@ class PostListViewModelTests: XCTestCase {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             
             // Expect postList to contain fetched posts
-            XCTAssertEqual(self.viewModel.postList.count, posts.count)
-            XCTAssertEqual(self.viewModel.postList.first?.first?.id, posts.first?.id)
+            XCTAssertEqual(self.viewModel.pictureList.count, posts.count)
+            XCTAssertEqual(self.viewModel.pictureList.first?.first?.id, posts.first?.id)
         }
     }
 
@@ -82,8 +83,8 @@ class PostListViewModelTests: XCTestCase {
         // Simulate successful fetch completion
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             // Expect postList to contain mapped posts
-            XCTAssertEqual(self.viewModel.postList.count, posts.count)
-            XCTAssertEqual(self.viewModel.postList.first?.first?.id, posts.first?.id)
+            XCTAssertEqual(self.viewModel.pictureList.count, posts.count)
+            XCTAssertEqual(self.viewModel.pictureList.first?.first?.id, posts.first?.id)
         }
     }
 

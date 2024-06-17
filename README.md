@@ -62,6 +62,7 @@ Press Cmd + U to run the tests.
 
 ## API Documentations (Unsplash)
 
+- The `baseUrl` is defined in the `NetworkManager.swift` file and requires the `client_id` as a url parameter to operate.
 - The `Configuration.swift` files container the `clientId` which is retrived from the `info.plist` for each targets.
 - The info.plist contains two client ids i.e. `ClientID` & `ClientID-2`, as the API liminations are 50 requests/hour.
 - Please replace the `clientId` key with the other, incase of limitation on the API.

@@ -36,7 +36,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6JM-zR-ZNH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6JM-zR-ZNH">
                                 <rect key="frame" x="192" y="17" width="80" height="78.666666666666671"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

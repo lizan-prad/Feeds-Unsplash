@@ -10,28 +10,20 @@ import Combine
 
 protocol PostListService {
     // Function to fetch posts for a given page
-    func fetchPosts(page: Int) -> AnyPublisher<[Post], ErrorHandler>
+    func fetchPhotos(page: Int) -> AnyPublisher<[PictureModel], ErrorHandler>
     
-    // Function to fetch albums for a given user ID
-    func fetchAlbums(userId: String) -> AnyPublisher<[Album], ErrorHandler>
-    
-    // Function to fetch photos for a given album ID
-    func fetchPhotos(albumId: String) -> AnyPublisher<[Photo], ErrorHandler>
+    // Function to fetch posts for a given username
+    func fetchPhotosWith(username: String) -> AnyPublisher<[PictureModel], ErrorHandler>
+
 }
 
 extension PostListService {
     // Default implementation of fetchPosts using NetworkManager
-    func fetchPosts(page: Int) -> AnyPublisher<[Post], ErrorHandler> {
-        return NetworkManager.shared.fetch(Post.self, endpoint: "/posts?page=\(page)")
+    func fetchPhotos(page: Int) -> AnyPublisher<[PictureModel], ErrorHandler> {
+        return NetworkManager.shared.fetch(PictureModel.self, endpoint: "photos?client_id=\(Configuration.clientID)&page=\(page)")
     }
     
-    // Default implementation of fetchAlbums using NetworkManager
-    func fetchAlbums(userId: String) -> AnyPublisher<[Album], ErrorHandler> {
-        return NetworkManager.shared.fetch(Album.self, endpoint: "/users/\(userId)/albums")
-    }
-    
-    // Default implementation of fetchPhotos using NetworkManager
-    func fetchPhotos(albumId: String) -> AnyPublisher<[Photo], ErrorHandler> {
-        return NetworkManager.shared.fetch(Photo.self, endpoint: "/album/\(albumId)/photos")
+    func fetchPhotosWith(username: String) -> AnyPublisher<[PictureModel], ErrorHandler> {
+        return NetworkManager.shared.fetch(PictureModel.self, endpoint: "users/\(username)/photos?client_id=\(Configuration.clientID)&per_page=50")
     }
 }

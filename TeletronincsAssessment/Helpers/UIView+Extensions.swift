@@ -7,6 +7,18 @@
 
 import UIKit
 
+extension String {
+    
+    func formattedToStandard() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        formatter.timeZone = TimeZone(abbreviation: "UTC")
+        let date = formatter.date(from: self)
+        formatter.dateFormat = "yyyy MMM dd"
+        return formatter.string(from: date ?? Date())
+    }
+}
+
 extension UIView {
     
     // method to add corner radius to a view

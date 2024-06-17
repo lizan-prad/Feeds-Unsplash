@@ -18,11 +18,17 @@ class PostImagesTableViewCell: UITableViewCell {
     private var cancellables = Set<AnyCancellable>()
     
     // Configure the views and data for the cell
-    func configureCell(_ album: Album?,_ index: Int) {
-        self.albumTitle.text = album?.title
-        self.postTitle.text = album?.photos?[index].title
-        self.loadImage(URL.init(string: album?.photos?[index].url ?? ""))
+    func configureCell(_ picture: PictureModel?,_ index: Int) {
+        self.albumTitle.text = picture?.alt_description
+        self.postTitle.text = "Date: \(picture?.created_at?.formattedToStandard() ?? "")"
+        self.loadImage(URL.init(string: picture?.urls?.regular ?? ""))
         setupViews()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        postImageView.image = nil  // Reset the image
+        cancellables.removeAll()  // Cancel any ongoing image load operations
     }
     
     private func setupViews() {

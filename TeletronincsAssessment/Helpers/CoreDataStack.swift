@@ -47,10 +47,10 @@ class CoreDataStack {
     }
 
     // Fetch all PostEntity objects
-    func fetchPostEntities() -> AnyPublisher<[PostEntity], Error> {
-        let fetchRequest: NSFetchRequest<PostEntity> = PostEntity.fetchRequest()
+    func fetchPictureEntities() -> AnyPublisher<[PictureEntity], Error> {
+        let fetchRequest: NSFetchRequest<PictureEntity> = PictureEntity.fetchRequest()
 
-        return Future<[PostEntity], Error> { promise in
+        return Future<[PictureEntity], Error> { promise in
             do {
                 let entities = try self.context.fetch(fetchRequest)
                 promise(.success(entities))  // Fulfill promise with fetched entities
@@ -63,7 +63,7 @@ class CoreDataStack {
     
     // Clear all data from CoreData
     func clearAllData() -> AnyPublisher<Void, Error> {
-        let entities = [PostEntity.self, AlbumEntity.self, PhotoEntity.self]
+        let entities = [PictureEntity.self, UrlEntity.self, LinkEntity.self, UserEntity.self, ProfileImageEntity.self]
         
         return Publishers.MergeMany(entities.map { entity in
             self.deleteAll(for: entity)

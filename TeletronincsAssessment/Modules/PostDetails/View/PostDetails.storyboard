@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juh-zm-5Ll">
-                                <rect key="frame" x="16" y="79" width="361" height="65.666666666666686"/>
+                                <rect key="frame" x="16" y="79" width="361" height="82.666666666666686"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sa0-9o-qGJ">
-                                        <rect key="frame" x="56" y="11.999999999999996" width="289" height="41.666666666666657"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sa0-9o-qGJ">
+                                        <rect key="frame" x="56" y="11.999999999999996" width="289" height="58.666666666666657"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNg-5u-1Fw">
                                                 <rect key="frame" x="0.0" y="0.0" width="289" height="19.333333333333332"/>
@@ -28,16 +28,22 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckk-6M-4iZ">
-                                                <rect key="frame" x="0.0" y="27.333333333333325" width="289" height="14.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6F-dl-7yI">
+                                                <rect key="frame" x="0.0" y="23.333333333333329" width="289" height="14.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckk-6M-4iZ">
+                                                <rect key="frame" x="0.0" y="41.666666666666657" width="289" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMd-cu-eXb">
-                                        <rect key="frame" x="12" y="15.666666666666675" width="30" height="34.333333333333343"/>
+                                        <rect key="frame" x="12" y="24.333333333333332" width="30" height="34.333333333333343"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="PC8-pD-qIe"/>
                                         </constraints>
@@ -64,7 +70,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="64W-3T-eU0">
-                                <rect key="frame" x="0.0" y="164.66666666666669" width="393" height="653.33333333333326"/>
+                                <rect key="frame" x="0.0" y="181.66666666666669" width="393" height="636.33333333333326"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -85,6 +91,7 @@
                         <outlet property="postTitle" destination="HNg-5u-1Fw" id="iUL-q5-l7Z"/>
                         <outlet property="tableView" destination="64W-3T-eU0" id="ud8-RD-jkh"/>
                         <outlet property="titleContainer" destination="juh-zm-5Ll" id="NIO-FP-YOi"/>
+                        <outlet property="usernameLabel" destination="v6F-dl-7yI" id="RTP-sq-Axb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

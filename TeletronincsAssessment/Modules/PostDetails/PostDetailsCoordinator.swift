@@ -9,11 +9,11 @@ import UIKit
 
 class PostDetailsCoordinator {
     private var navigationController: UINavigationController?
-    private var postModel: Post?
+    private var pictureList: [PictureModel]?
     
-    init(navigationController: UINavigationController?, postModel: Post?) {
+    init(navigationController: UINavigationController?, pictureList: [PictureModel]?) {
         self.navigationController = navigationController
-        self.postModel = postModel
+        self.pictureList = pictureList
     }
     
     func start() {
@@ -22,7 +22,7 @@ class PostDetailsCoordinator {
             .instantiateViewController(withIdentifier: "PostDetailsViewController") as! PostDetailsViewController
         
         // Pass the postModel to the `PostDetailsViewController`
-        postDetailsViewController.post = self.postModel
+        postDetailsViewController.pictureList = self.pictureList
         
         // Hide the navigation bar for this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: true)

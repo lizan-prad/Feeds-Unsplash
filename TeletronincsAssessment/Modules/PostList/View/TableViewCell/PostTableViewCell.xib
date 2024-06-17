@@ -9,27 +9,27 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="461" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="TeletronincsAssessment" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="382" height="461"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="452" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="TeletronincsAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="452"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="382" height="461"/>
+                <rect key="frame" x="0.0" y="0.0" width="382" height="452"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mv2-TI-hxF">
-                        <rect key="frame" x="8" y="8" width="366" height="445"/>
+                        <rect key="frame" x="8" y="8" width="366" height="436"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bIF-yZ-rbd">
-                                <rect key="frame" x="16" y="20" width="334" height="59"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bIF-yZ-rbd">
+                                <rect key="frame" x="68" y="20" width="282" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLT-3j-dl5">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="19.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="19.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z24-mQ-JPm">
-                                        <rect key="frame" x="0.0" y="27.333333333333336" width="334" height="31.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="23.333333333333336" width="282" height="26.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PKv-5q-Wko" customClass="ContentSizeCollectionView" customModule="TeletronincsAssessment" customModuleProvider="target">
-                                <rect key="frame" x="16" y="91" width="334" height="334"/>
+                                <rect key="frame" x="16" y="82" width="334" height="334"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="334" id="08c-od-IEt"/>
@@ -50,15 +50,25 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Rb0-Rk-Ax6">
+                                <rect key="frame" x="16" y="26" width="40" height="38.666666666666671"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ED1-Az-Xee"/>
+                                    <constraint firstAttribute="width" constant="40" id="dKy-B3-xrb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18348264276918602" green="0.17338770920732835" blue="0.3497210535848484" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="PKv-5q-Wko" secondAttribute="trailing" constant="16" id="1sI-vt-JUg"/>
-                            <constraint firstItem="bIF-yZ-rbd" firstAttribute="leading" secondItem="mv2-TI-hxF" secondAttribute="leading" constant="16" id="Aoi-sh-7v2"/>
                             <constraint firstItem="PKv-5q-Wko" firstAttribute="top" secondItem="bIF-yZ-rbd" secondAttribute="bottom" constant="12" id="CM6-57-xpp"/>
+                            <constraint firstItem="bIF-yZ-rbd" firstAttribute="leading" secondItem="Rb0-Rk-Ax6" secondAttribute="trailing" constant="12" id="NeR-B4-Vg8"/>
                             <constraint firstAttribute="bottom" secondItem="PKv-5q-Wko" secondAttribute="bottom" constant="20" id="VKQ-lb-VnS"/>
                             <constraint firstItem="bIF-yZ-rbd" firstAttribute="top" secondItem="mv2-TI-hxF" secondAttribute="top" constant="20" id="Xmv-M3-nCQ"/>
+                            <constraint firstItem="Rb0-Rk-Ax6" firstAttribute="centerY" secondItem="bIF-yZ-rbd" secondAttribute="centerY" id="boF-bk-K4T"/>
                             <constraint firstAttribute="trailing" secondItem="bIF-yZ-rbd" secondAttribute="trailing" constant="16" id="mTp-DB-zD2"/>
+                            <constraint firstItem="Rb0-Rk-Ax6" firstAttribute="leading" secondItem="mv2-TI-hxF" secondAttribute="leading" constant="16" id="s2W-bN-5bg"/>
                             <constraint firstItem="PKv-5q-Wko" firstAttribute="leading" secondItem="mv2-TI-hxF" secondAttribute="leading" constant="16" id="uqr-fz-Ouy"/>
                         </constraints>
                     </view>
@@ -76,9 +86,13 @@
                 <outlet property="bodyLabel" destination="z24-mQ-JPm" id="jBe-wf-d68"/>
                 <outlet property="collectionView" destination="PKv-5q-Wko" id="tc2-21-phd"/>
                 <outlet property="containerView" destination="mv2-TI-hxF" id="jzg-oO-X7T"/>
+                <outlet property="profilePicture" destination="Rb0-Rk-Ax6" id="FqV-hA-rbc"/>
                 <outlet property="titleLabel" destination="ZLT-3j-dl5" id="SiW-Gc-mNq"/>
             </connections>
-            <point key="canvasLocation" x="103.81679389312977" y="165.84507042253523"/>
+            <point key="canvasLocation" x="103.81679389312977" y="169.01408450704227"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
 </document>

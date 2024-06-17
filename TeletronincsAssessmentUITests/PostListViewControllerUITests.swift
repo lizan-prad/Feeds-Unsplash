@@ -65,11 +65,11 @@ final class PostListViewControllerUITests: XCTestCase {
         
         // Check if the table view exists
         let postListTableView = app.tables["PostListViewController.tableView"]
-        XCTAssertTrue(postListTableView.exists)
+        XCTAssertTrue(postListTableView.waitForExistence(timeout: 20))
         
         // Check if the loading view is initially waiting
         let loadingView = app.otherElements["PostListViewController.loadingView"]
-        XCTAssertTrue(loadingView.exists)
+        XCTAssertTrue(loadingView.waitForExistence(timeout: 20))
         
         // Test tapping on a post cell to navigate to details
         let firstPostCell = postListTableView.cells.element(matching: .cell, identifier: "PostTableViewCell_0")
@@ -90,7 +90,7 @@ final class PostListViewControllerUITests: XCTestCase {
         
         // Check if the table view exists
         let postListTableView = app.tables["PostListViewController.tableView"]
-        XCTAssertTrue(postListTableView.exists)
+        XCTAssertTrue(postListTableView.waitForExistence(timeout: 20))
         
         let firstPostCell = postListTableView.cells.element(matching: .cell, identifier: "PostTableViewCell_0")
         XCTAssertTrue(firstPostCell.waitForExistence(timeout: 20))

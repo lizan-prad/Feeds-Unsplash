@@ -21,7 +21,7 @@ class PostListViewController: UIViewController {
         setupAccessibility()
         setupTableView()
         setupBindings()
-        viewModel.fetchPostsWithAlbums(page: 1)
+        viewModel.fetchPhotos(1)
         setupViews()
     }
     
@@ -54,7 +54,7 @@ class PostListViewController: UIViewController {
             .store(in: &cancellables)
         
         // Bind `postList` to `tableView.reloadData()` to update table view content
-        viewModel.$postList
+        viewModel.$pictureList
             .receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
                 self?.tableView.reloadData()
@@ -85,9 +85,9 @@ class PostListViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    private func openPostDetails(_ post: Post?) {
+    private func openPostDetails(_ post: [PictureModel]?) {
         // Navigate to post details view
-        let coordinator = PostDetailsCoordinator(navigationController: self.navigationController, postModel: post)
+        let coordinator = PostDetailsCoordinator(navigationController: self.navigationController, pictureList: post)
         coordinator.start()
     }
 }
@@ -97,13 +97,13 @@ extension PostListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return number of posts in viewModel
-        return viewModel.postList.count
+        return viewModel.pictureList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure cell with post data
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as! PostTableViewCell
-        let post = viewModel.postList[indexPath.row]
+        let post = viewModel.pictureList[indexPath.row]
         cell.accessibilityIdentifier = "PostTableViewCell_\(indexPath.row)"
         cell.configure(with: post)
         
@@ -115,7 +115,7 @@ extension PostListViewController: UITableViewDataSource, UITableViewDelegate {
         // Handle cell's `photoTapSubject` to show image preview
         cell.photoTapSubject
             .sink { [weak self] photo in
-                let coordinator = ImagePreviewCoordinator(navigationController: self?.navigationController, photoModel: photo)
+                let coordinator = ImagePreviewCoordinator(navigationController: self?.navigationController, pictureModel: photo)
                 coordinator.start()
             }
             .store(in: &cancellables)
@@ -125,13 +125,13 @@ extension PostListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // Fetch more posts when reaching the end of the table view
-        if indexPath.row == viewModel.postList.count - 1 {
-            viewModel.fetchPostsWithAlbums(page: (viewModel.postList.count / 10) + 1)
+        if indexPath.row == viewModel.pictureList.count - 1 {
+            viewModel.fetchPhotos((viewModel.pictureList.count / 10) + 1)
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Open post details when a row is selected
-        self.openPostDetails(self.viewModel.postList[indexPath.row])
+        self.openPostDetails(self.viewModel.pictureList[indexPath.row])
     }
 }

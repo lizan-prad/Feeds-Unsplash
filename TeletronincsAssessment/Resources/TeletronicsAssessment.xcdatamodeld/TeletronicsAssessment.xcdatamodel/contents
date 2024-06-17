@@ -1,26 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
-    <entity name="AlbumEntity" representedClassName="AlbumEntity" syncable="YES">
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
-        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhotoEntity"/>
-        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PostEntity"/>
+    <entity name="LinkEntity" representedClassName="LinkEntity" syncable="YES">
+        <attribute name="followers" optional="YES" attributeType="String"/>
+        <attribute name="following" optional="YES" attributeType="String"/>
+        <attribute name="html" optional="YES" attributeType="String"/>
+        <attribute name="likes" optional="YES" attributeType="String"/>
+        <attribute name="photos" optional="YES" attributeType="String"/>
+        <attribute name="portfolio" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="PhotoEntity" representedClassName="PhotoEntity" syncable="YES">
-        <attribute name="albumId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    <entity name="PictureEntity" representedClassName="PictureEntity" syncable="YES">
+        <attribute name="altDescription" optional="YES" attributeType="String"/>
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="height" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="imageData" optional="YES" attributeType="Binary"/>
-        <attribute name="thumbnailUrl" optional="YES" attributeType="String"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
-        <attribute name="url" optional="YES" attributeType="String"/>
-        <relationship name="album" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AlbumEntity"/>
+        <attribute name="likedByUser" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="likes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="String"/>
+        <attribute name="width" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="links" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LinkEntity"/>
+        <relationship name="url" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UrlEntity"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity"/>
     </entity>
-    <entity name="PostEntity" representedClassName="PostEntity" syncable="YES">
-        <attribute name="body" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
-        <attribute name="userId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="albums" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AlbumEntity"/>
+    <entity name="ProfileImageEntity" representedClassName="ProfileImageEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="large" optional="YES" attributeType="String"/>
+        <attribute name="medium" optional="YES" attributeType="String"/>
+        <attribute name="small" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UrlEntity" representedClassName="UrlEntity" syncable="YES">
+        <attribute name="full" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="raw" optional="YES" attributeType="String"/>
+        <attribute name="regular" optional="YES" attributeType="String"/>
+        <attribute name="small" optional="YES" attributeType="String"/>
+        <attribute name="thumb" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
+        <attribute name="acceptedTos" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="instagramUsername" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="portfolioUrl" optional="YES" attributeType="String"/>
+        <attribute name="totalCollections" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalLikes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalPhotos" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="twitterUsername" optional="YES" attributeType="String"/>
+        <attribute name="updatedAt" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="links" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LinkEntity"/>
+        <relationship name="profileImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProfileImageEntity"/>
     </entity>
 </model>

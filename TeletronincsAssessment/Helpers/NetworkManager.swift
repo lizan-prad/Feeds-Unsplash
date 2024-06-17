@@ -13,7 +13,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     
     // Base URL for the API
-    private let baseURL = "https://jsonplaceholder.typicode.com"
+    private let baseURL = "https://api.unsplash.com/"
     
     // Function to fetch data from API
     func fetch<T: Codable>(_ type: T.Type, endpoint: String) -> AnyPublisher<[T], ErrorHandler> {

@@ -11,7 +11,7 @@ import Network
 
 class PostListViewModel: ObservableObject {
     // Published properties to update UI
-    @Published var postList: [Post] = []
+    @Published var pictureList: [[PictureModel]] = []
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     
@@ -37,14 +37,14 @@ class PostListViewModel: ObservableObject {
             guard let self = self else { return }
             
             if path.status == .satisfied {
-                self.fetchPostsFromRemote(page: page)
+                self.fetchPhotos(page)
             } else {
-                self.fetchPostsFromCoreData()
+                self.fetchPicturesFromCoreData()
             }
         }
         
         if monitor?.currentPath.status == .satisfied {
-            self.fetchPostsFromRemote(page: page)
+            self.fetchPhotos(page)
         }
         
         let queue = DispatchQueue(label: "NetworkMonitor")
@@ -55,40 +55,53 @@ class PostListViewModel: ObservableObject {
 // MARK: - PostListService Extension for `PostListService`
 extension PostListViewModel: PostListService {
     
-    // Fetch posts from remote API
-    private func fetchPostsFromRemote(page: Int) {
+    func fetchPhotos(_ page: Int) {
         self.isLoading = true
-        
-        fetchPosts(page: page)
-            .flatMap { [weak self] (posts: [Post]) -> AnyPublisher<[Post], ErrorHandler> in
+        self.fetchPhotos(page: page)
+            .flatMap { [weak self] (posts: [PictureModel]) -> AnyPublisher<[[PictureModel]], ErrorHandler> in
                 guard let self = self else {
                     return Fail(error: ErrorHandler.unknownError(error: "Something went wrong!"))
                         .eraseToAnyPublisher()
                 }
                 
-                let postPublishers: [AnyPublisher<Post, ErrorHandler>] = posts.map { post in
-                    self.fetchAlbums(userId: "\(post.userId)")
-                        .flatMap { albums -> AnyPublisher<Post, ErrorHandler> in
-                            let albumPublishers: [AnyPublisher<Album, ErrorHandler>] = albums.map { album in
-                                self.fetchPhotos(albumId: "\(album.id)")
-                                    .map { photos in
-                                        var albumWithPhotos = album
-                                        albumWithPhotos.photos = photos
-                                        return albumWithPhotos
-                                    }
-                                    .eraseToAnyPublisher()
-                            }
-                            return Publishers.MergeMany(albumPublishers).collect()
-                                .map { albumsWithPhotos in
-                                    var postWithAlbums = post
-                                    postWithAlbums.album = albumsWithPhotos
-                                    return postWithAlbums
-                                }
-                                .eraseToAnyPublisher()
-                        }
-                        .eraseToAnyPublisher()
+                let userPublishers: [AnyPublisher<[PictureModel], ErrorHandler>] = posts.map { model in
+                    self.fetchPhotosWith(username: model.user?.username ?? "")
                 }
-                return Publishers.MergeMany(postPublishers).collect().eraseToAnyPublisher()
+                
+                return Publishers.MergeMany(userPublishers).collect()
+                    .eraseToAnyPublisher()
+            }
+            .sink(receiveCompletion: { [weak self] completion in
+                self?.isLoading = false
+                switch completion {
+                case .finished:
+                    break // handle successful completion if needed
+                case .failure(let error):
+                    self?.errorMessage = error.localizedDescription
+                }
+            }, receiveValue: { [weak self] picturesArray in
+                self?.pictureList = (self?.pictureList ?? []) + picturesArray
+                self?.savePictureModels(userPicturesList: picturesArray.flatMap({$0}))
+            })
+            .store(in: &cancellables)
+    }
+}
+
+// MARK: - PostListService Extension for `CoreData`
+extension PostListViewModel {
+    
+    // Fetch posts from Core Data
+    private func fetchPicturesFromCoreData() {
+        self.isLoading = true
+        
+        dataManager.fetchPictureEntities()
+            .receive(on: DispatchQueue.main) // Ensure UI updates on the main thread
+            .map { posts -> [PictureModel] in
+                return posts.compactMap { PictureModel(entity: $0) }
+            }
+            .map { pictureModels -> [[PictureModel]] in
+                // Group PictureModels by username
+                return Dictionary(grouping: pictureModels) { $0.user?.username ?? "" }.values.map { $0 }
             }
             .sink(receiveCompletion: { [weak self] completion in
                 guard let self = self else { return }
@@ -99,78 +112,95 @@ extension PostListViewModel: PostListService {
                 case .finished:
                     break
                 }
-                self.isLoading = false
-            }, receiveValue: { [weak self] posts in
-                guard let self = self else { return }
-                
-                self.postList = posts
-                self.savePostsWithAlbumsAndPhotos(posts: posts)  // comment when performing `UITests`
-            })
-            .store(in: &cancellables)
-    }
-}
-
-// MARK: - PostListService Extension for `CoreData`
-extension PostListViewModel {
-    
-    // Fetch posts from Core Data
-    private func fetchPostsFromCoreData() {
-        self.isLoading = true
-        dataManager.fetchPostEntities()
-            .sink(receiveCompletion: { [weak self] completion in
-                guard let self = self else { return }
-                
-                switch completion {
-                case .failure(let error):
-                    self.errorMessage = error.localizedDescription
-                case .finished:
-                    break
-                }
-                self.isLoading = false
-            }, receiveValue: { [weak self] posts in
-                guard let self = self else { return }
-                
-                self.postList = posts.map { Post(entity: $0) }
+            }, receiveValue: { [weak self] pictureArray in
+                self?.isLoading = false
+                self?.pictureList = pictureArray
             })
             .store(in: &cancellables)
     }
     
     // Save posts with albums and photos to Core Data
-    private func savePostsWithAlbumsAndPhotos(posts: [Post]) {
-        
+    private func savePictureModels(userPicturesList: [PictureModel]) {
         let context = dataManager.context
         
-        posts.forEach { post in
-            let postEntity = PostEntity(context: context)
-            postEntity.id = Int32(post.id)
-            postEntity.userId = Int32(post.userId)
-            postEntity.title = post.title
-            postEntity.body = post.body
+        userPicturesList.forEach { userPicture in
+            let pictureEntity = PictureEntity(context: context)
             
-            if let postAlbums = post.album {
-                let albumEntities = postAlbums.map { album in
-                    let albumEntity = AlbumEntity(context: context)
-                    albumEntity.id = Int32(album.id)
-                    albumEntity.userId = Int32(album.userId)
-                    albumEntity.title = album.title
-                    albumEntity.post = postEntity
-                    
-                    if let albumPhotos = album.photos {
-                        let photoEntities = albumPhotos.map { photo in
-                            let photoEntity = PhotoEntity(context: context)
-                            photoEntity.id = Int32(photo.id)
-                            photoEntity.albumId = Int32(photo.albumId)
-                            photoEntity.title = photo.title
-                            photoEntity.url = photo.url
-                            photoEntity.thumbnailUrl = photo.thumbnailUrl
-                            photoEntity.album = albumEntity
-                            return photoEntity
-                        }
-                        albumEntity.photos = NSSet(array: photoEntities)
-                    }
-                    return albumEntity
+            pictureEntity.id = userPicture.id
+            pictureEntity.updatedAt = userPicture.updated_at
+            pictureEntity.width = Int32(userPicture.width ?? 0)
+            pictureEntity.height = Int32(userPicture.height ?? 0)
+            pictureEntity.color = userPicture.color
+            pictureEntity.descriptions = userPicture.descriptions
+            pictureEntity.altDescription = userPicture.alt_description
+            pictureEntity.likes = Int32(userPicture.likes ?? 0)
+            pictureEntity.likedByUser = userPicture.liked_by_user ?? false
+            pictureEntity.imageData = userPicture.imageData
+            
+            // Create and set URL entity
+            if let urls = userPicture.urls {
+                let urlEntity = UrlEntity(context: context)
+                urlEntity.raw = urls.raw
+                urlEntity.full = urls.full
+                urlEntity.regular = urls.regular
+                urlEntity.small = urls.small
+                urlEntity.thumb = urls.thumb
+                pictureEntity.url = urlEntity
+            }
+            
+            // Create and set links entity
+            if let links = userPicture.links {
+                let linkEntity = LinkEntity(context: context)
+                linkEntity.html = links.html
+                linkEntity.photos = links.photos
+                linkEntity.likes = links.likes
+                linkEntity.portfolio = links.portfolio
+                linkEntity.following = links.following
+                linkEntity.followers = links.followers
+                pictureEntity.links = linkEntity
+            }
+            
+            // Create and set user entity
+            if let userModel = userPicture.user {
+                let userEntity = UserEntity(context: context)
+                userEntity.id = userModel.id
+                userEntity.updatedAt = userModel.updated_at
+                userEntity.username = userModel.username
+                userEntity.name = userModel.name
+                userEntity.firstName = userModel.first_name
+                userEntity.lastName = userModel.last_name
+                userEntity.twitterUsername = userModel.twitter_username
+                userEntity.portfolioUrl = userModel.portfolio_url
+                userEntity.bio = userModel.bio
+                userEntity.location = userModel.location
+                userEntity.instagramUsername = userModel.instagram_username
+                userEntity.totalCollections = Int32(userModel.total_collections ?? 0)
+                userEntity.totalLikes = Int32(userModel.total_likes ?? 0)
+                userEntity.totalPhotos = Int32(userModel.total_photos ?? 0)
+                userEntity.acceptedTos = userModel.accepted_tos ?? false
+                
+                // Set links entity for user
+                if let links = userModel.links {
+                    let userLinkEntity = LinkEntity(context: context)
+                    userLinkEntity.html = links.html
+                    userLinkEntity.photos = links.photos
+                    userLinkEntity.likes = links.likes
+                    userLinkEntity.portfolio = links.portfolio
+                    userLinkEntity.following = links.following
+                    userLinkEntity.followers = links.followers
+                    userEntity.links = userLinkEntity
                 }
-                postEntity.albums = NSSet(array: albumEntities)
+                
+                // Set profile image entity for user
+                if let profileImage = userModel.profile_image {
+                    let userProfileImageEntity = ProfileImageEntity(context: context)
+                    userProfileImageEntity.small = profileImage.small
+                    userProfileImageEntity.medium = profileImage.medium
+                    userProfileImageEntity.large = profileImage.large
+                    userEntity.profileImage = userProfileImageEntity
+                }
+                
+                pictureEntity.user = userEntity
             }
         }
         

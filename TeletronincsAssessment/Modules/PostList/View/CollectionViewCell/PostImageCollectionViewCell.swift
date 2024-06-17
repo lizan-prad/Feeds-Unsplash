@@ -25,6 +25,12 @@ class PostImageCollectionViewCell: UICollectionViewCell {
         self.shownMoreBtn.setTitle("+\(count)", for: .normal)  // Set title to display count
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        postImage.image = nil  // Reset the image
+        cancellables.removeAll()  // Cancel any ongoing image load operations
+    }
+    
     func loadImage() {
         // Configure `postImage` UI attributes
         self.postImage.clipsToBounds = true

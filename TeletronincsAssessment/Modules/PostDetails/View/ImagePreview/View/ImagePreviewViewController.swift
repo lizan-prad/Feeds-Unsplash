@@ -15,17 +15,17 @@ class ImagePreviewViewController: UIViewController {
     
     private var cancellables = Set<AnyCancellable>()  // Stores cancellables for Combine subscriptions
     
-    var photo: Photo?
+    var pictureModel: PictureModel?
    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imageView.accessibilityIdentifier = "FullPreviewImageView"
         self.setupViews()  // Setup initial views
-        self.loadImage(URL(string: photo?.url ?? ""))  // Load image from the provided URL
+        self.loadImage(URL(string: pictureModel?.urls?.full ?? ""))  // Load image from the provided URL
     }
     
     private func setupViews() {
-        self.photoTitle.text = photo?.title  // Set the photo title label
+        self.photoTitle.text = pictureModel?.alt_description  // Set the photo title label
     }
     
     private func loadImage(_ imageUrl: URL?) {

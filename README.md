@@ -1,8 +1,8 @@
 # Feeds!
 
-<img src="https://github.com/lizan-prad/Feeds/assets/96415013/70e04e5b-7190-4d81-9cdf-16cdb41dae45" alt="LaunchScreen" width="200" height="450">
-<img src="https://github.com/lizan-prad/Feeds-Unsplash/assets/96415013/d3ddbfa7-5aec-43e7-b85a-3f422c59202c" alt="FeedsList" width="200" height="450">
-<img src="https://github.com/lizan-prad/Feeds-Unsplash/assets/96415013/13316aee-b48f-4fcf-9c78-558ef18208fa" alt="PostDetails" width="200" height="450">
+<img src="https://github.com/lizan-prad/Feeds/assets/96415013/70e04e5b-7190-4d81-9cdf-16cdb41dae45" alt="LaunchScreen" width="200" height="420">
+<img src="https://github.com/lizan-prad/Feeds-Unsplash/assets/96415013/d3ddbfa7-5aec-43e7-b85a-3f422c59202c" alt="FeedsList" width="200" height="420">
+<img src="https://github.com/lizan-prad/Feeds-Unsplash/assets/96415013/13316aee-b48f-4fcf-9c78-558ef18208fa" alt="PostDetails" width="200" height="420">
 
 ## Overview
 

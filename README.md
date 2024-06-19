@@ -32,7 +32,7 @@ cd TeletronincsAssessment
 ```
 
 ### 2. Open the Project in Xcode
-Open TeletronincsAssessment.xcodeproj in Xcode.
+Open `TeletronincsAssessment.xcodeproj` in Xcode.
 
 ### 3. Install Dependencies
 - Lottie-swift: Library for animations (added to `LaunchAnimationViewController`)
@@ -52,12 +52,12 @@ Select the target device or simulator and press Cmd + R to build and run the pro
 FYI: Don't forget to comment the `self.savePostsWithAlbumsAndPhotos(posts: posts)` in `PostListViewModel` before starting the UITests
 
 - Unit Tests
-Unit tests are located in the TeletronincsAssessmentTests target. To run the unit tests:
+Unit tests are located in the `TeletronincsAssessmentTests` target. To run the unit tests:
 - Select the TeletronincsAssessmentTests scheme.
 Press Cmd + U to run the tests.
 UI Tests
-UI tests are located in the SocialMediaAppUITests target. To run the UI tests:
-- Select the TeletronincsAssessmentUITests scheme.
+UI tests are located in the `TeletronicsAssessmentUITests` target. To run the UI tests:
+- Select the `TeletronincsAssessmentUITests` scheme.
 Press Cmd + U to run the tests.
 
 ## API Documentations (Unsplash)
@@ -69,10 +69,10 @@ Press Cmd + U to run the tests.
 
 ## Assumptions
 
-- API Availability: The remote API used for fetching posts is available and stable. If the API is down or unreachable, the app will show an error message to the user.
-- Image URLs: It is assumed that each post has a valid image URL. In a real-world scenario, proper validation and error handling would be necessary.
-- Infinite Scroll: The API supports pagination and returns a predictable number of posts per page. The current implementation assumes that fetching posts will return a non-empty response until there are no more posts.
-- Core Data Model: The Core Data model for caching posts is set up correctly. The model includes attributes for id, title, and body as required by the Post entity.
+- API Availability: The remote API used for fetching pictures is available and stable. If the API is down or unreachable, the app will show an error message to the user.
+- Image URLs: It is assumed that albums have valid image URLs. In a real-world scenario, proper validation and error handling would be necessary.
+- Infinite Scroll: The API supports pagination and returns a predictable number of user albums per page. The current implementation assumes that fetching these picture albums will return a non-empty response until there are no more posts.
+- Core Data Model: The Core Data model for caching picture albums are set up correctly. The model includes attributes for id, links, urls, descriptions and user as required by the `PictureEntity` entity.
 
 ## Project Structure
 
